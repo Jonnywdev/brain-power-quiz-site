@@ -83,7 +83,7 @@ hr {
     overflow: hidden;
 }
 
-#about-section h1{
+#about-section h2{
     font-weight: 600;
     font-size: 2.5em;
     margin: 0;
@@ -98,9 +98,28 @@ hr {
     overflow: hidden;
 }
 
-.lm-img {
-    width: 50%;
+.love-maths-wrapped {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.lm-img-wrapper {
+    width: 70%;
+    margin-right: 10px;
+    float: left;
+}
+
+#lm-img {
+    width: 100%;
     height: auto;
+}
+
+.lm-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    float: right;
 }
 
 /* other quiz categories section */
@@ -112,7 +131,7 @@ hr {
     overflow: hidden;
 }
 
-#last-section h1{
+#last-section h3{
     font-weight: 600;
     font-size: 2.5em;
     margin: 0;
