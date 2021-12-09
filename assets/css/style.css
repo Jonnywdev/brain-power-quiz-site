@@ -12,6 +12,11 @@ hr {
     border-bottom: none;
 }
 
+p {
+    color: #000000;
+    font-size: 25px;
+}
+
 /* header */
 .header {
     display: none;
@@ -78,7 +83,7 @@ hr {
 #about-section {
     position: relative;
     top: 12rem;
-    height: 75vh;
+    height: 125vh;
     margin: 0 2rem;
     overflow: hidden;
 }
@@ -90,13 +95,6 @@ hr {
 }
 
 /* love maths section */
-#love-maths-section {
-    position: relative;
-    top: 12rem;
-    height: 75vh;
-    margin: 0 2rem;
-    overflow: hidden;
-}
 
 .love-maths-wrapped {
     width: 100%;
@@ -118,7 +116,7 @@ hr {
 .lm-text-wrapper {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 27%;
     float: right;
 }
 
