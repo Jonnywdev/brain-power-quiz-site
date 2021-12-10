@@ -30,7 +30,7 @@ p {
     background-color: #45396f;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
 }
 
@@ -71,7 +71,6 @@ p {
     top: 12rem;
     height: 75vh;
     margin: 0 2rem;
-    overflow: hidden;
 }
 
 #first-section h1{
@@ -79,6 +78,94 @@ p {
     font-size: 2.5em;
     margin: 0;
 }
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* card styling */
+.card {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 8px;
+    max-width: 320px;
+    min-width: 240px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 28%;
+}
+  
+.card * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+  
+.card:before,
+.card:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 32px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+}
+  
+.card img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+  
+.card .quiz-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.1em;
+    opacity: 0;
+    z-index: 5;
+    transition-delay: 0.1s;
+}
+
+.quiz-caption h3{
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+  
+.card:hover:before,
+.card:hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+  
+.card:hover > img {
+    opacity: 0.7;
+}
+  
+.card:hover .quiz-caption {
+    opacity: 1;
+}
+
 /* about us section */
 #about-section {
     position: relative;
@@ -124,9 +211,8 @@ p {
 #last-section {
     position: relative;
     top: 12rem;
-    height: 75vh;
+    height: 125vh;
     margin: 0 2rem;
-    overflow: hidden;
 }
 
 #last-section h3{
@@ -134,3 +220,13 @@ p {
     font-size: 2.5em;
     margin: 0;
 }
+
+.quiz-caption h4 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
