@@ -264,17 +264,76 @@ p {
     top: 12rem;
 }
 
-.quiz-card {
+.welcome-card {
     margin: 2.5em 2.5em 0 2.5em;
     background: #eeeeee;
     text-align: center;
     padding: 5em;
 }
 
-.quiz-card h1 {
+.welcome-card h1 {
     font-weight: 600;
     font-size: 2.5em;
 }
+
+/* Question card styles */
+
+#quiz-section {
+    position: relative;
+    top: 12rem;
+}
+
+.quiz-card {
+    margin: 2.5em 8em;
+    background: #eeeeee;
+    padding: 2.5em 5em;
+}
+
+.question-count {
+    float: right;
+    text-align: right;
+    width: 22.5%;
+}
+
+.q-wrapper {
+    float: left;
+    width: 75%;
+    margin-right: 10px;
+}
+
+.answers {
+    margin-top: 2rem;
+    width: 75%;
+}
+
+.bottom-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.score-area {
+    display: flex;
+    width: 60%;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px 25px 0 25px;
+    font-size: 15px;
+}
+
+#score {
+    color: #00a30d;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: #c7000f;
+    font-weight: bold;
+}
+
 
 /* button styles */
 
@@ -293,7 +352,7 @@ p {
 }
 
 .btn--gray {
-    margin-top: 25px;
+    margin: 25px;
     background-color: #8b9dff;
     border: 1px transparent;
     border-radius: 20px;
@@ -302,4 +361,18 @@ p {
 .btn--gray:active,
 .btn--gray:hover {
     background-color: #0d1013;
+}
+
+.answer--btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #000;
+    cursor: pointer;
+    margin: 5px;
+    background: #C6C6C6;
+    border: 1px transparent;
+    border-radius: 20px;
 }

@@ -27,12 +27,32 @@
         </nav>
     </header>
 
-    <section id="welcome-section">
+    <section id="quiz-section">
         <div class="quiz-card">
-            <div class="question-count"></div>
-            <h1>question</h1>
-            <button data-type="next" class="btn btn--gray">Get Started</button>
+            <div class="question-count">
+                <p>Question: <span id="question">0</span>/10</p>
+            </div>
+            <div class="q-wrapper">
+                <h1>question</h1>
+                <hr>
+            </div>
+                
+            <div class="answers">
+                <button class="answer--btn">Answer 1</button>
+                <button class="answer--btn">Answer 2</button>
+                <button class="answer--btn">Answer 3</button>
+                <button class="answer--btn">Answer 4</button>
+            </div>
+            
+            <div class="bottom-wrapped">
+                <div class="score-area">
+                    <p class="scores">Correct Answers: <span id="score">0</span></p>
+                    <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+                </div>
+                <button data-type="next" class="btn btn--gray">Next</button>
+            </div>
         </div>
+        <br>
     </section>
   
     
