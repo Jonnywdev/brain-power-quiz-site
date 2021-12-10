@@ -69,7 +69,7 @@ p {
 #first-section {
     position: relative;
     top: 12rem;
-    height: 75vh;
+    padding-bottom: 5em;
     margin: 0 2rem;
 }
 
@@ -85,18 +85,26 @@ p {
     width: 100%;
 }
 
+.card-wrapper a {
+    width: 28%;
+}
+
 /* card styling */
 .card {
     background-color: #000;
     color: #fff;
     display: inline-block;
-    margin: 8px;
     max-width: 320px;
     min-width: 240px;
     overflow: hidden;
     position: relative;
     text-align: center;
     width: 28%;
+    margin-bottom: 10px;
+}
+
+.left-card {
+    margin-right: 10px;
 }
   
 .card * {
@@ -170,7 +178,7 @@ p {
 #about-section {
     position: relative;
     top: 12rem;
-    height: 125vh;
+    padding-bottom: 5em;
     margin: 0 2rem;
     overflow: hidden;
 }
@@ -190,7 +198,7 @@ p {
 }
 
 .lm-img-wrapper {
-    width: 70%;
+    width: 67%;
     margin-right: 10px;
     float: left;
 }
@@ -205,13 +213,30 @@ p {
     flex-direction: column;
     width: 27%;
     float: right;
+    margin-right: 25px;
+    
+}
+
+.lm-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    background: #45396f;
+    color: #79fff0;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.lm-btn:hover {
+    box-shadow: 2px 2px 18px #000000;
 }
 
 /* other quiz categories section */
 #last-section {
     position: relative;
     top: 12rem;
-    height: 125vh;
+    padding-bottom: 5em;
     margin: 0 2rem;
 }
 
@@ -230,3 +255,51 @@ p {
     color: #fff;
 }
 
+/* end of landing page */
+
+/* generic welcome page */
+
+#welcome-section {
+    position: relative;
+    top: 12rem;
+}
+
+.quiz-card {
+    margin: 2.5em 2.5em 0 2.5em;
+    background: #eeeeee;
+    text-align: center;
+    padding: 5em;
+}
+
+.quiz-card h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+/* button styles */
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--gray {
+    margin-top: 25px;
+    background-color: #8b9dff;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.btn--gray:active,
+.btn--gray:hover {
+    background-color: #0d1013;
+}
