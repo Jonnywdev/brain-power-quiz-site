@@ -334,6 +334,20 @@ p {
     font-weight: bold;
 }
 
+.btns-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* congratulations Card */
+#congrats-section {
+    position: relative;
+    top: 10rem;
+}
+
 
 /* button styles */
 
