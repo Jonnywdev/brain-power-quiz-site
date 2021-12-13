@@ -129,100 +129,100 @@ const generalKnowledgeQuestions = [
     {
         question : 'Which African Country does Mafia Island belong to?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'Togo', correct: false},
+            { text: 'Kenya', correct: false},
+            { text: 'Tanzania', correct: true},
+            { text: 'Sudan', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'A hippophobe is afraid of which animals?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'Horses', correct: true},
+            { text: 'Cows', correct: false},
+            { text: 'Bats', correct: false},
+            { text: 'hippopotamuses', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'Who is Erik Weisz better known as?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'Eminem', correct: false},
+            { text: 'Kit Harrington', correct: false},
+            { text: 'Harry Houdini', correct: true},
+            { text: 'Drake', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'What is the longest that an animal has ever lived? (That we know of)',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: '17 years', correct: false},
+            { text: '49 years', correct: false},
+            { text: '86 years', correct: true},
+            { text: '142 years', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'How many rings are on the Olympic flag',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'None', correct: false},
+            { text: '5', correct: true},
+            { text: '7', correct: false},
+            { text: '4', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'What is a tarsier?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'A primate', correct: true},
+            { text: 'A lizard', correct: false},
+            { text: 'A bird', correct: false},
+            { text: 'A fish', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'How did Spider-man get his powers?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'Military experiment gone awry', correct: false},
+            { text: 'Born with them', correct: false},
+            { text: 'Woke up with them after a strange dream', correct: false},
+            { text: 'Bitten by a radioactive spider', correct: true}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'In darts whats the most points you can score with a single throw?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: '60', correct: true},
+            { text: '100', correct: false},
+            { text: '50', correct: false},
+            { text: '20', correct: false}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'Which of these animals does NOT appear in the Chinese zodiac?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: 'Rabbit', correct: false},
+            { text: 'Dragon', correct: false},
+            { text: 'Dog', correct: false},
+            { text: 'Bear', correct: true}
         ]
     },
 
     {
-        question : 'What was the length of the titanic?',
+        question : 'In the nursery rhyme, how many blackbirds were baked in a pie?',
         answers: [
-            { text: '238 meters', correct: false},
-            { text: '321 meters', correct: false},
-            { text: '269 meters', correct: true},
-            { text: '199 meters', correct: false}
+            { text: '11', correct: false},
+            { text: '67', correct: false},
+            { text: '24', correct: true},
+            { text: '38', correct: false}
         ]
-    },
+    }
 ]
