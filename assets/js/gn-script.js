@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-game-btn')
+const nextButton = document.getElementById('next')
 const welcomeScreen = document.getElementById('welcome-card')
 const questionWrapper = document.getElementById('quiz-wrapper')
 const questionElement = document.getElementById('question')
@@ -27,6 +28,7 @@ function startGame() {
  * from the list of questions below.
  */
 function setNextQuestion() {
+    resetButtons()
     showQuestion(shuffleQuestions[currentQuestionLibrary])
 }
 
@@ -34,16 +36,29 @@ function setNextQuestion() {
  * Shows the question on the card.
  */
 function showQuestion(question) {
-    questionElement.innerText =question.question 
+    questionElement.innerText =question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('answer--btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerbuttons.appendChild(button)
+    })
 }
 
 /**
- * Sets the correct answer on the screen.
- * changes the colors, the correct button will change
- * to green, the incorrect answers will turn to red.
+ * Selects answers for the question to display on screen
  */
-function selectAnswer() {
-
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerbuttons.children).forEach(buttons => {
+        setStatusClass(button, button.dataset.correct)
+    })
 }
 
 /**
@@ -51,7 +66,10 @@ function selectAnswer() {
  * back to their original color.
  */
 function resetButtons() {
-
+    nextButton.classList.add('hide')
+    while (answerbuttons.firstChild) {
+        answerbuttons.removeChild(answerbuttons.firstChild)
+    }
 }
 
 /**
@@ -60,7 +78,9 @@ function resetButtons() {
  * whether you have selected the correct or 
  * incorrect answer.
  */
-function setBackClass() {
+function setBackClass(element, correct) {
+    clearBackClass(element)
+    
 
 }
 
