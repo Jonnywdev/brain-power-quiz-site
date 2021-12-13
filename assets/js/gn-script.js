@@ -14,6 +14,8 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 })
 
+let score = 0;
+
 /**
  * Starts the game once
  * start game button has been clicked
@@ -99,6 +101,8 @@ function setBackClass(element, correct) {
 
 }
 
+function checkAnswer(answer)
+
 /**
  * Changes the background color back to the original.
  *
@@ -110,10 +114,25 @@ function clearBackClass(element) {
 }
 
 /**
+ * Checks to see if the user got the answer correct
+ */
+ function answerIsCorrect() {
+    document.getElementById(questionElement)
+}
+
+/**
+ * Checks to see if the user got the answer wrong 
+ */
+ function answerIsWrong() {
+
+}
+
+/**
  * Adds 1 to the score if you get the answer right!
  */
 function incrementScore() {
-
+    let oldscore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldscore;
 }
 
 /**
@@ -121,7 +140,8 @@ function incrementScore() {
  * answer correct.
  */
 function incrementWrongAnswer() {
-
+    let oldscore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldscore;
 }
 
 /**
