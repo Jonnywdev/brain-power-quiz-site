@@ -382,7 +382,7 @@ p {
 }
 
 .answer--btn {
-    width: 220px;
+    width: 45%;
     height: 60px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -596,7 +596,7 @@ p {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
     /* quiz section */
     .question-count {
         width: 100%;
@@ -618,7 +618,7 @@ p {
 
     .answer--btn {
         width: 100%;
-        margin-bottom: 15px;
+        margin: 0 0 15px 0;
     }
 
     .scores {
@@ -652,18 +652,7 @@ p {
     .card-wrapper {
         column-count: 1;
     }
-
-    /* quiz page */
-    .answer--btn {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .scores {
-        font-size: 15px;
-        text-align: center;
-    }
-
+    /* btn */
     .btn--gray {
         margin: 15px;
     }
@@ -689,24 +678,6 @@ p {
         font-size: 1em;
     }
 
-    /* quiz page */
-    .question-count {
-        width: 100%;
-    }
-
-    .q-wrapper {
-        width: 100%;
-    }
-
-    .bottom-wrapped {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-end;
-    }
-
-    .score-area {
-        width: 100%;
-    }
 
     /* congrats */
     #congrats-section {
