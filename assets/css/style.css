@@ -561,4 +561,124 @@ p {
     }
 }
 
+@media (max-width: 500px) {
+    /* header */
+    #head-bg img {
+        width: 17%;
+    }
 
+    /* homepage */
+    #first-section {
+        padding-bottom: 2.5em;
+    }
+
+    #about-section {
+        padding-bottom: 2.5em;
+    }
+
+    #last-section {
+        padding-bottom: 2.5em;
+    }
+
+    /* welcome */
+    .welcome-card h1 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    /* question page */
+    .quiz-card {
+        margin: 1.5em 1.5em;
+        padding: 1.5em 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    /* header */
+    #head-bg img {
+        width: 20%;
+    }
+
+    /* homepage */
+    #first-section h1 {
+        font-size: 1.5em;
+    }
+    #about-section h2 {
+        font-size: 1.5em;
+    }
+    #last-section h3 {
+        font-size: 1.5em;
+    }
+
+    hr {
+        border-top: 2px solid #000000;
+    }
+
+    .card-wrapper {
+        column-count: 1;
+    }
+
+    /* quiz page */
+    .answer--btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .scores {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .btn--gray {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    /* header */
+    #menu {
+        font-size: 60%;
+        line-height: 0;
+    }
+
+    /* welcome */
+    #welcome-section {
+        top: 6rem;
+    }
+
+    .welcome-card {
+        margin: 1.5em 1.5em 0 1.5em;
+    }
+
+    .welcome-card h1 {
+        font-size: 1em;
+    }
+
+    /* quiz page */
+    .question-count {
+        width: 100%;
+    }
+
+    .q-wrapper {
+        width: 100%;
+    }
+
+    .bottom-wrapped {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    /* congrats */
+    #congrats-section {
+        position: relative;
+        top: 5rem;
+    }
+}
