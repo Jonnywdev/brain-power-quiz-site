@@ -4,7 +4,7 @@ const welcomeScreen = document.getElementById('welcome-card')
 const questionWrapper = document.getElementById('quiz-wrapper')
 const questionElement = document.getElementById('question')
 const answerbuttons = document.getElementById('answer-buttons')
-
+const bodyBackground = document.getElementById('bg-body')
 
 let shuffleQuestions, currentQuestionLibrary
 
@@ -65,7 +65,7 @@ function selectAnswer(e) {
     Array.from(answerbuttons.children).forEach(button => {
         setBackClass(button, button.dataset.correct)
     })
-
+    nextButton.classList.remove('hide')
 
 }
 
@@ -75,9 +75,12 @@ function selectAnswer(e) {
  */
 function resetButtons() {
     nextButton.classList.add('hide')
+    bodyBackground.classList.remove('wrong')
+    bodyBackground.classList.remove('correct')
     while (answerbuttons.firstChild) {
         answerbuttons.removeChild(answerbuttons.firstChild)
     }
+
 }
 
 /**
