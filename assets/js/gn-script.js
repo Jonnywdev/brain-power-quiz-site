@@ -6,7 +6,7 @@ const questionElement = document.getElementById('question')
 const answerbuttons = document.getElementById('answer-buttons')
 
 
-let shuffleQuestions, currentQuestionLibrary 
+let shuffleQuestions, currentQuestionLibrary
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -15,7 +15,7 @@ nextButton.addEventListener('click', () => {
 })
 
 /**
- * Starts the game once 
+ * Starts the game once
  * start game button has been clicked
  */
 function startGame() {
@@ -29,7 +29,7 @@ function startGame() {
 }
 
 /**
- * Sets the next question. 
+ * Sets the next question.
  * from the list of questions below.
  */
 function setNextQuestion() {
@@ -56,20 +56,22 @@ function showQuestion(question) {
 
 /**
  * Selects answers for the question to display on screen
+ * and makes next button visable
  */
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
     setBackClass(document.body, correct)
-    Array.from(answerbuttons.children).forEach(buttons => {
-        setBackClass(buttons, buttons.dataset.correct)
+    Array.from(answerbuttons.children).forEach(button => {
+        setBackClass(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hide')
+
+
 }
 
 /**
- * Resets the answer buttons,
- * back to their original color.
+ * Hides next button
+ * Takes out previous questions
  */
 function resetButtons() {
     nextButton.classList.add('hide')
@@ -80,8 +82,8 @@ function resetButtons() {
 
 /**
  * Sets the background to either
- * red or green, depending on 
- * whether you have selected the correct or 
+ * red or green, depending on
+ * whether you have selected the correct or
  * incorrect answer.
  */
 function setBackClass(element, correct) {
@@ -96,6 +98,8 @@ function setBackClass(element, correct) {
 
 /**
  * Changes the background color back to the original.
+ *
+ * --- is not working for bg at the moment, must fix!
  */
 function clearBackClass(element) {
     element.classList.remove('correct')
@@ -110,7 +114,7 @@ function incrementScore() {
 }
 
 /**
- * Adds 1 to the wrong answer box if you dont get the 
+ * Adds 1 to the wrong answer box if you dont get the
  * answer correct.
  */
 function incrementWrongAnswer() {
