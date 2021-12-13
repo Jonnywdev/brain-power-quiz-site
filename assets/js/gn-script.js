@@ -55,9 +55,9 @@ function showQuestion(question) {
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    setBackClass(document.body, correct)
     Array.from(answerbuttons.children).forEach(buttons => {
-        setStatusClass(button, button.dataset.correct)
+        setBackClass(buttons, buttons.dataset.correct)
     })
 }
 
@@ -80,15 +80,20 @@ function resetButtons() {
  */
 function setBackClass(element, correct) {
     clearBackClass(element)
-    
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
 
 }
 
 /**
  * Changes the background color back to the original.
  */
-function clearBackClass() {
-
+function clearBackClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
 }
 
 /**
@@ -118,10 +123,10 @@ const generalKnowledgeQuestions = [
     {
         question : 'What was the length of the titanic?',
         answers: [
-            { text: '238', correct: false},
-            { text: '321', correct: false},
-            { text: '269', correct: true},
-            { text: '199', correct: false}
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
         ]
     }
 ]
