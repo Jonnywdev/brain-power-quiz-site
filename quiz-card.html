@@ -28,7 +28,14 @@
     </header>
 
     <section id="quiz-section">
-        <div class="quiz-card">
+
+        <div class="welcome-card" id="welcome-card">
+            <h1>Welcome to the General Knowledge Quiz!</h1>
+            <button data-type="start" class="btn btn--gray" id="start-game-btn" >Get Started</button>
+        </div>
+
+        <div class="quiz-card hide" id="quiz-wrapper">
+            
             <div class="question-count">
                 <p>Question: <span id="question">0</span>/10</p>
             </div>
@@ -56,6 +63,6 @@
     </section>
   
     
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/gn-script.js"></script>
 </body>
 </html>

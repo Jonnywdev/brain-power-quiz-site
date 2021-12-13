@@ -25,6 +25,10 @@ p {
     font-size: 25px;
 }
 
+.hide {
+    display: none;
+}
+
 /* header */
 .header {
     display: none;
