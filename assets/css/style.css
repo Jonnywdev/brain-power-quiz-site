@@ -596,6 +596,38 @@ p {
     }
 }
 
+@media (max-width: 420px) {
+    /* quiz section */
+    .question-count {
+        width: 100%;
+    }
+
+    .q-wrapper {
+        width: 100%;
+    }
+
+    .bottom-wrapped {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .answer--btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .scores {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
 @media (max-width: 400px) {
     /* header */
     #head-bg img {
