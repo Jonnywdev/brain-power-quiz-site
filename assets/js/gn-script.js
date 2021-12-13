@@ -1,8 +1,10 @@
 const startButton = document.getElementById('start-game-btn')
 const welcomeScreen = document.getElementById('welcome-card')
 const questionWrapper = document.getElementById('quiz-wrapper')
+const questionElement = document.getElementById('question')
+const answerbuttons = document.getElementById('answer-buttons')
 
-const shuffleQuestions, currentQuestionLibrary
+let shuffleQuestions, currentQuestionLibrary 
 
 startButton.addEventListener('click', startGame)
 
@@ -13,7 +15,7 @@ startButton.addEventListener('click', startGame)
 function startGame() {
     console.log('started')
     welcomeScreen.classList.add('hide')
-    shuffleQuestions = questions.sort(() => Math.random() - .5)
+    shuffleQuestions = generalKnowledgeQuestions.sort(() => Math.random() - .5)
     currentQuestionLibrary = 0
     questionWrapper.classList.remove('hide')
     setNextQuestion()
@@ -31,8 +33,8 @@ function setNextQuestion() {
 /**
  * Shows the question on the card.
  */
-function showQuestion() {
-
+function showQuestion(question) {
+    questionElement.innerText =question.question 
 }
 
 /**

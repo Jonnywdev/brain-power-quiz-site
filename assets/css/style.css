@@ -422,11 +422,6 @@ p {
     .lm-btn {
         font-size: 20px;
     }
-
-    /* answer sheet */
-    .answers {
-        width: 100%;
-    }
 }
 
 @media (max-width: 900px) {
@@ -571,6 +566,8 @@ p {
         width: 100px;
         height: 40px;
     }
+
+
 }
 
 @media (max-width: 500px) {
@@ -638,6 +635,11 @@ p {
         text-align: center;
     }
 
+    .answers {
+        margin-top: 7rem;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -668,6 +670,7 @@ p {
     .btn--gray {
         margin: 15px;
     }
+
 }
 
 @media (max-width: 300px) {
