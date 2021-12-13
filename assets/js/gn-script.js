@@ -5,9 +5,14 @@ const questionWrapper = document.getElementById('quiz-wrapper')
 const questionElement = document.getElementById('question')
 const answerbuttons = document.getElementById('answer-buttons')
 
+
 let shuffleQuestions, currentQuestionLibrary 
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionLibrary++
+    setNextQuestion()
+})
 
 /**
  * Starts the game once 
@@ -59,6 +64,7 @@ function selectAnswer(e) {
     Array.from(answerbuttons.children).forEach(buttons => {
         setBackClass(buttons, buttons.dataset.correct)
     })
+    nextButton.classList.remove('hide')
 }
 
 /**
@@ -121,6 +127,16 @@ function incrementQuestionCount() {
 
 const generalKnowledgeQuestions = [
     {
+        question : 'Which African Country does Mafia Island belong to?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
         question : 'What was the length of the titanic?',
         answers: [
             { text: '238 meters', correct: false},
@@ -128,5 +144,85 @@ const generalKnowledgeQuestions = [
             { text: '269 meters', correct: true},
             { text: '199 meters', correct: false}
         ]
-    }
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
+
+    {
+        question : 'What was the length of the titanic?',
+        answers: [
+            { text: '238 meters', correct: false},
+            { text: '321 meters', correct: false},
+            { text: '269 meters', correct: true},
+            { text: '199 meters', correct: false}
+        ]
+    },
 ]
