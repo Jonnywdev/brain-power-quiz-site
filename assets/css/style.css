@@ -206,6 +206,12 @@ p {
     height: auto;
 }
 
+.lm-is-wrapped {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .lm-text-wrapper {
     display: flex;
     flex-direction: column;
@@ -397,7 +403,88 @@ p {
         width: 13%;
     }
     /* home page */
+    p {
+        font-size: 20px;
+    }
 
+    .lm-btn {
+        font-size: 20px;
+    }
+
+    /* answer sheet */
+    .answers {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    /* header */
+    #menu {
+        line-height: 25px;
+    }
+    /* home screen */
+    .lm-text-wrapper {
+        width: 35%;
+    }
+
+    /* quiz card hover features */
+    .quiz-caption h4 {
+        font-size: 20px;
+    }
+
+    .quiz-caption h3 {
+        font-size: 20px;
+    }
+
+    /* quiz card */
+    .quiz-card {
+        padding: 1.5em 2em;
+    }
+}
+
+@media (max-width: 700px) {
+    /* home page */
+    p {
+        font-size: 15px;
+    }
+
+    .lm-btn {
+        font-size: 15px;
+    }
+
+    /* welcome page */
+
+    .welcome-card {
+        margin: 1.5em 2.5em 0 2.5em;
+        padding: 3em 2em;
+    }
+
+    #welcome-section {
+        top: 9rem;
+    }
+
+    /* quiz page */
+    #quiz-section {
+        top: 9rem;
+    }
+
+    .quiz-card {
+        margin: 1.5em 5em;
+    }
+
+    .answer--btn {
+        font-size: 10px;
+    }
+
+    .scores {
+        padding: 25px 15px 10px 15px;
+    }
+
+    .welcome-card h1 {
+        font-size: 2em;
+    }
+
+    
 
 
 }
