@@ -15,6 +15,10 @@ nextButton.addEventListener('click', () => {
 })
 
 
+function openGeneralKnowledge() {
+    
+}
+
 /**
  * Starts the game once
  * start game button has been clicked
