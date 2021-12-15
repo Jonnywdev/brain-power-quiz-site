@@ -9,9 +9,11 @@ const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
 const choiceD = document.getElementById('D');
 const score = document.getElementById('score-area');
+const progress = document.getElementsById('progress');
 
 const lastQuestion = questions.length -1;
 let runningQuestion = 0;
+let score = 0;
 
 /**
  * Show the question
@@ -19,51 +21,19 @@ let runningQuestion = 0;
 function showQuestion() {
     let q = questions[runningQuestion];
     question.innerHTML = "<p>"+ q.question +"</p>";
-    
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
 }
 
-function () {
-
-}
-
-function () {
-
-}
-
-function () {
-
-}
-
-function () {
-
-}
-
-function () {
-
-}
-
-function () {
-
-}
-
-function () {
-
-}
-
-function () {
-
-}
-
-function setNextQuestion() {
-
-}
-
-function showQuestion() {
-
-}
-
-function selectAnswer() {
-
+/**
+ * Show the progress 
+ */
+function showProgress() {
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
+        ProgressEvent.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+    }
 }
 
 /**

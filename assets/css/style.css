@@ -418,6 +418,22 @@ p {
     color: #fff;
 }
 
+/* progress circles */
+#progress {
+    padding: 5px;
+    text-align: right;
+}
+
+.prog {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /* Media Queries */
 
 @media (max-width: 1000px) {
