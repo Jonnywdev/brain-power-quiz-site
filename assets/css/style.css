@@ -3,6 +3,7 @@ body {
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: #fff;
 }
 
@@ -278,24 +279,90 @@ p {
 
 /* generic welcome page */
 
-#welcome-section {
-    position: relative;
-    top: 12rem;
-}
 
 .welcome-card {
-    margin: 2.5em 2.5em 0 2.5em;
-    background: #eeeeee;
-    text-align: center;
-    padding: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background: #fff;
     border-radius: 5px;
+    color: #000;
+    overflow: hidden;
 }
 
-.welcome-card h1 {
-    font-weight: 600;
-    font-size: 2.5em;
+.info-title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
+
+.welcome-card .info-list {
+    padding: 15px 35px;
+}
+
+.welcome-card .info-list .info {
+    margin: 5px 0; 
+    font-size: 17px;
+}
+
+.welcome-card .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+
+.btn--blue {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    color: #007bff;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quit:hover {
+    color: #fff;
+    background: #007bff;
+}
+
+
+.buttons button.btn--blue:hover {
+    background: #0263ca;
+}
 /* Question card styles */
 
 #quiz-section {
