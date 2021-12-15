@@ -40,21 +40,20 @@
                 <p>Question: <span id="question-count">0</span>/10</p>
             </div>
             <div class="q-wrapper" id="question">
-                Question
+                
                 <hr>
             </div>
                 
             <div class="answers" id="answer-buttons">
-                <button class="answer--btn">Answer 1</button>
-                <button class="answer--btn">Answer 2</button>
-                <button class="answer--btn">Answer 3</button>
-                <button class="answer--btn">Answer 4</button>
+                <button class="answer--btn" id="A" onclick="checkAnswer('A')">Answer 1</button>
+                <button class="answer--btn" id="B" onclick="checkAnswer('B')">Answer 2</button>
+                <button class="answer--btn" id="C" onclick="checkAnswer('C')">Answer 3</button>
+                <button class="answer--btn" id="D" onclick="checkAnswer('D')">Answer 4</button>
             </div>
             
             <div class="bottom-wrapped">
-                <div class="score-area">
-                    <p class="scores">Correct Answers: <span id="score">0</span></p>
-                    <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+                <div class="score-area" id="score-area">
+
                 </div>
                 <button data-type="next" class="btn btn--gray hide" id="next">Next</button>
             </div>
