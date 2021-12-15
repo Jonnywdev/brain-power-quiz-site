@@ -9,11 +9,26 @@ const choiceB = document.getElementById('B');
 const choiceC = document.getElementById('C');
 const choiceD = document.getElementById('D');
 const score = document.getElementById('score-area');
-const progress = document.getElementsById('progress');
+const progress = document.getElementById('progress');
 
-const lastQuestion = questions.length -1;
-let runningQuestion = 0;
-let score = 0;
+let shuffleQuestions, currentQuestionLibrary
+
+start.addEventListener('click', startGame)
+
+/**
+ * Starts the game once the start game button has been clicked
+*/
+function startGame() {
+    console.log('Started')
+    welcomeScreen.classList.add('hide')
+    shuffleQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionLibrary = 0
+    quizCard.classList.remove('hide')
+
+}
+
+// const lastQuestion = questions.length -1;
+// let runningQuestion = 0;
 
 /**
  * Show the question
