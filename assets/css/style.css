@@ -1,8 +1,9 @@
 body {
-    background: #8b9dff;
+    background: #007bff;
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 
 body.correct {
@@ -16,14 +17,14 @@ body.wrong {
 
 
 hr {
-    border-top: 3px solid #000000;
+    border-top: 3px solid #fff;
     width: 100%;
     margin: 5px 0 30px 0;
     border-bottom: none;
 }
 
 p {
-    color: #000000;
+    color: #fff;
     font-size: 25px;
 }
 
@@ -41,7 +42,7 @@ p {
 }
 
 #head-bg {
-    background-color: #45396f;
+    background-color: #0263ca;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -76,7 +77,7 @@ p {
 
 #menu a  {
     text-decoration: none;
-    color: #79fff0;
+    color: #fff;
 }
 
 /* first section */
