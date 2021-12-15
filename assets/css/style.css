@@ -288,6 +288,7 @@ p {
     background: #eeeeee;
     text-align: center;
     padding: 5em;
+    border-radius: 5px;
 }
 
 .welcome-card h1 {
