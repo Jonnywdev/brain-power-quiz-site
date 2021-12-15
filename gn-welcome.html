@@ -14,7 +14,7 @@
 
     <section id="welcome-section">
         <!-- info box -->
-        <div class="welcome-card">
+        <div class="welcome--card">
                 <div class="info-title">
                     <span>Rules of the General Knowledge quiz</span>
                 </div>
@@ -29,9 +29,39 @@
 
                 <div class="buttons">
                     <a href="index.html" class="quit">Quit Quiz</a>
-                    <button data-type="start" class="btn--blue" id="start-btn" onclick="quiz-card.html">Get Started</button>
+                    <button data-type="start" class="btn--blue" id="start-btn">Get Started</button>
                 </div>
         </div>
+
+        <div class="quiz-card hide" id="quiz-wrapper">
+            
+            <div class="question-count">
+                <p>Question: <span id="question-count">0</span>/10</p>
+            </div>
+            <div class="q-wrapper" id="question">
+                
+                <hr>
+            </div>
+                
+            <div class="answers" id="answer-buttons">
+                <button class="answer--btn" id="A" onclick="checkAnswer('A')">Answer 1</button>
+                <button class="answer--btn" id="B" onclick="checkAnswer('B')">Answer 2</button>
+                <button class="answer--btn" id="C" onclick="checkAnswer('C')">Answer 3</button>
+                <button class="answer--btn" id="D" onclick="checkAnswer('D')">Answer 4</button>
+            </div>
+
+            <div id="progress" class="prog"></div>
+            
+            <div class="bottom-wrapped">
+                <div class="score-area" id="score-area">
+                    
+                </div>
+                <button data-type="next" class="btn btn--gray hide" id="next">Next</button>
+            </div>
+        </div>
+        <br>
+
+        
     </section>
   
     

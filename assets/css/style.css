@@ -280,7 +280,7 @@ p {
 /* generic welcome page */
 
 
-.welcome-card {
+.welcome--card {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -304,16 +304,16 @@ p {
 }
 
 
-.welcome-card .info-list {
+.welcome--card .info-list {
     padding: 15px 35px;
 }
 
-.welcome-card .info-list .info {
+.welcome--card .info-list .info {
     margin: 5px 0; 
     font-size: 17px;
 }
 
-.welcome-card .buttons {
+.welcome--card .buttons {
     height: 60px;
     display: flex;
     align-items: center;

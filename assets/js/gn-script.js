@@ -1,6 +1,6 @@
-const startButton = document.getElementById('start-game-btn')
+const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next')
-const welcomeScreen = document.getElementById('welcome-card')
+const welcomeScreen = document.getElementById('welcome--card')
 const questionWrapper = document.getElementById('quiz-wrapper')
 const questionElement = document.getElementById('question')
 const answerbuttons = document.getElementById('answer-buttons')
@@ -15,10 +15,6 @@ nextButton.addEventListener('click', () => {
 })
 
 
-function openGeneralKnowledge() {
-    
-}
-
 /**
  * Starts the game once
  * start game button has been clicked
@@ -26,7 +22,7 @@ function openGeneralKnowledge() {
 function startGame() {
     console.log('started')
     welcomeScreen.classList.add('hide')
-    shuffleQuestions = generalKnowledgeQuestions.sort(() => Math.random() - .5)
+    shuffleQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionLibrary = 0
     questionWrapper.classList.remove('hide')
     setNextQuestion()
@@ -153,7 +149,7 @@ function incrementQuestionCount() {
 
 }
 
-const generalKnowledgeQuestions = [
+const questions = [
     {
         question : 'Which African Country does Mafia Island belong to?',
         answers: [
