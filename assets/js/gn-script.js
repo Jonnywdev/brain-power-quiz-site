@@ -129,7 +129,6 @@ function startGame() {
  * from the list of questions below.
  */
 function setNextQuestion() {
-    resetButtons()
     showQuestion(shuffleQuestions[currentQuestionLibrary])
 }
 
@@ -148,99 +147,5 @@ function showQuestion(question) {
     //     button.addEventListener('click', selectAnswer)
     //     answerbuttons.appendChild(button)
     // })
-}
-
-/**
- * Selects answers for the question to display on screen
- * and makes next button visable
- */
-function selectAnswer(e) {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setBackClass(document.body, correct)
-    Array.from(answerbuttons.children).forEach(button => {
-        setBackClass(button, button.dataset.correct)
-    })
-    nextButton.classList.remove('hide')
-
-}
-
-/**
- * Hides next button
- * Takes out previous questions
- */
-function resetButtons() {
-    nextButton.classList.add('hide')
-    bodyBackground.classList.remove('wrong')
-    bodyBackground.classList.remove('correct')
-    while (answerbuttons.firstChild) {
-        answerbuttons.removeChild(answerbuttons.firstChild)
-    }
-
-}
-
-/**
- * Sets the background to either
- * red or green, depending on
- * whether you have selected the correct or
- * incorrect answer.
- */
-function setBackClass(element, correct) {
-    clearBackClass(element)
-    if (correct) {
-        element.classList.add('correct')
-    } else {
-        element.classList.add('wrong')
-    }
-
-}
-
-
-
-/**
- * Changes the background color back to the original.
- *
- * --- is not working for bg at the moment, must fix!
- */
-function clearBackClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
-}
-
-/**
- * Checks to see if the user got the answer correct
- */
- function answerIsCorrect() {
-
-}
-
-/**
- * Checks to see if the user got the answer wrong 
- */
- function answerIsWrong() {
-
-}
-
-/**
- * Adds 1 to the score if you get the answer right!
- */
-function incrementScore() {
-
-}
-
-/**
- * Adds 1 to the wrong answer box if you dont get the
- * answer correct.
- */
-function incrementWrongAnswer() {
-
-}
-
-/**
- * Adds 1 to the question count,
- * as you go through the questions.
- */
-function incrementQuestionCount() {
-
 }
 
