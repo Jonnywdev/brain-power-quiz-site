@@ -54,96 +54,108 @@ function showProgress() {
 /**
  * Create all of the Questions 
  */
-let questions = [
+
+
+const questions = [
     {
         question : 'Which African Country does Mafia Island belong to?',
-        choiceA : 'Togo', 
-        choiceB : 'Kenya',
-        choiceC : 'Tanzania',
-        choiceD : 'Sudan',
-        correct : 'C'
+        answers: [
+            { text: 'Togo', correct: false},
+            { text: 'Kenya', correct: false},
+            { text: 'Tanzania', correct: true},
+            { text: 'Sudan', correct: false}
+        ]
     },
 
     {
         question : 'A hippophobe is afraid of which animals?',
-        choiceA : 'Horses', 
-        choiceB : 'Cows', 
-        choiceC : 'Bats', 
-        choiceD : 'hippopotamuses',
-        correct : 'A'
+        answers: [
+            { text: 'Horses', correct: true},
+            { text: 'Cows', correct: false},
+            { text: 'Bats', correct: false},
+            { text: 'hippopotamuses', correct: false}
+        ]
     },
 
     {
         question : 'Who is Erik Weisz better known as?',
-        choiceA : 'Eminem', 
-        choiceB : 'Kit Harrington', 
-        choiceC : 'Harry Houdini',
-        choiceD : 'Drake',
-        correct : 'C'
+        answers: [
+            { text: 'Eminem', correct: false},
+            { text: 'Kit Harrington', correct: false},
+            { text: 'Harry Houdini', correct: true},
+            { text: 'Drake', correct: false}
+        ]
     },
 
     {
         question : 'What is the longest that an animal has ever lived? (That we know of)',
-        choiceA : '17 years', 
-        choiceB : '49 years', 
-        choiceC : '86 years', 
-        choiceD : '142 years',
-        correct : 'C'
+        answers: [
+            { text: '17 years', correct: false},
+            { text: '49 years', correct: false},
+            { text: '86 years', correct: true},
+            { text: '142 years', correct: false}
+        ]
     },
 
     {
         question : 'How many rings are on the Olympic flag',
-        choiceA : 'None',
-        choiceB : '5', 
-        choiceC : '7',
-        choiceD : '4',
-        correct : 'B'
+        answers: [
+            { text: 'None', correct: false},
+            { text: '5', correct: true},
+            { text: '7', correct: false},
+            { text: '4', correct: false}
+        ]
     },
 
     {
         question : 'What is a tarsier?',
-        choiceA : 'A primate', 
-        choiceB : 'A lizard', 
-        choiceC : 'A bird', 
-        choiceD : 'A fish',
-        correct : 'A'
+        answers: [
+            { text: 'A primate', correct: true},
+            { text: 'A lizard', correct: false},
+            { text: 'A bird', correct: false},
+            { text: 'A fish', correct: false}
+        ]
     },
 
     {
         question : 'How did Spider-man get his powers?',
-        choiceA : 'Military experiment gone awry',
-        choiceB : 'Born with them',
-        choiceC : 'Woke up with them after a strange dream', 
-        choiceD : 'Bitten by a radioactive spider',
-        correct : 'D'
+        answers: [
+            { text: 'Military experiment gone awry', correct: false},
+            { text: 'Born with them', correct: false},
+            { text: 'Woke up with them after a strange dream', correct: false},
+            { text: 'Bitten by a radioactive spider', correct: true}
+        ]
     },
 
     {
         question : 'In darts whats the most points you can score with a single throw?',
-        choiceA : '60', 
-        choiceB : '100', 
-        choiceC : '50', 
-        choiceD : '20',
-        correct : 'A'
+        answers: [
+            { text: '60', correct: true},
+            { text: '100', correct: false},
+            { text: '50', correct: false},
+            { text: '20', correct: false}
+        ]
     },
 
     {
         question : 'Which of these animals does NOT appear in the Chinese zodiac?',
-        choiceA : 'Rabbit', 
-        choiceB : 'Dragon', 
-        choiceC : 'Dog',
-        choiceD : 'Bear',
-        correct : 'D'
+        answers: [
+            { text: 'Rabbit', correct: false},
+            { text: 'Dragon', correct: false},
+            { text: 'Dog', correct: false},
+            { text: 'Bear', correct: true}
+        ]
     },
 
     {
-        question : 'In the nursery rhyme, how many blackbirds were baked in a pie?', 
-        choiceA : "11",
-        choiceB : '67',
-        choiceC : '24',
-        choiceD : '38',
-        correct : 'C'
-        
+        question : 'In the nursery rhyme, how many blackbirds were baked in a pie?',
+        answers: [
+            { text: '11', correct: false},
+            { text: '67', correct: false},
+            { text: '24', correct: true},
+            { text: '38', correct: false}
+        ]
     }
-];
+]
+
 

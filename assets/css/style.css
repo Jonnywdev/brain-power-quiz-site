@@ -1,10 +1,10 @@
 body {
-    background: #007bff;
+    background: #ff9d00;
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: #000;
 }
 
 body.correct {
@@ -18,14 +18,14 @@ body.wrong {
 
 
 hr {
-    border-top: 3px solid #fff;
+    border-top: 3px solid #000;
     width: 100%;
     margin: 5px 0 30px 0;
     border-bottom: none;
 }
 
 p {
-    color: #fff;
+    color: #000;
     font-size: 25px;
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 #head-bg {
-    background-color: #0263ca;
+    background-color: #000;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -241,11 +241,10 @@ p {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
-    background: #45396f;
-    color: #79fff0;
+    background: #000;
+    color: #fff;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .lm-btn:hover {
@@ -327,8 +326,8 @@ p {
     height: 40px;
     width: 100px;
     color: #fff;
-    background: #007bff;
-    border: 1px solid #007bff;
+    background: #000;
+    border: 1px solid #000;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
@@ -343,10 +342,10 @@ p {
     margin: 0 5px;
     height: 40px;
     width: 100px;
-    color: #007bff;
+    color: #000;
     text-decoration: none;
     background: transparent;
-    border: 1px solid #007bff;
+    border: 1px solid #000;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
@@ -356,12 +355,12 @@ p {
 
 .quit:hover {
     color: #fff;
-    background: #007bff;
+    background: #000;
 }
 
 
 .buttons button.btn--blue:hover {
-    background: #0263ca;
+    background: #2a2a2a;
 }
 /* Question card styles */
 
