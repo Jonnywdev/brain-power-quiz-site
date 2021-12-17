@@ -14,6 +14,19 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 })
 
+var questions = new Array();
+var choices = new Array();
+var answers = new Array();
+var response = new Array();
+
+questions[0] = '';
+choices[0] = new Array();
+choices[0][0] = '';
+choices[0][1] = '';
+choices[0][2] = '';
+choices[0][3] = '';
+answers[0] = choices[0][2];
+
 /**
  * List of questions
  */
@@ -26,6 +39,8 @@ let questions = [
         choiceD : 'Sudan',
         correct : 'C'
     },
+
+    
 
     {
         question : 'A hippophobe is afraid of which animals?',
@@ -137,13 +152,12 @@ function setNextQuestion() {
  */
 function showQuestion(question) {
     questionElement.innerText =question.question
-    // question.answers.forEach(answer => {
-    //     const button = document.createElement('button')
-    //     button.innerText = answer.text
-    //     button.classList.add('answer--btn')
-    //     if (answer.correct) {
-    //         button.dataset.correct = answer.correct
-    //     }
+     questions.choiceA.forEach(() => {
+         const button = document.createElement('button')
+         button.innerText = answer.text
+         button.classList.add('answer--btn')
+     })
+         
     //     button.addEventListener('click', selectAnswer)
     //     answerbuttons.appendChild(button)
     // })

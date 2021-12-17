@@ -423,6 +423,7 @@ p {
 .score-area {
     display: flex;
     width: 60%;
+    align-items: center;
 }
 
 .scores {
