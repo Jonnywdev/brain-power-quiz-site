@@ -26,7 +26,12 @@
 - To give users easy understandable rules for each quiz.
 - To give users an understanding of how they did.
 - To give users the opportunity to try out a differnt game, they have made.
+
 # Features
+## Clean structure
+The website is designed to give the user a great experience, with an easy to use design and to be user-friendly on all types of devices. There will be no difference in the experience users have when on a mobile compared to a laptop!
+
+### Wirefarmes
 
 
 # Technology
