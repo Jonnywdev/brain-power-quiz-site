@@ -32,6 +32,30 @@
 The website is designed to give the user a great experience, with an easy to use design and to be user-friendly on all types of devices. There will be no difference in the experience users have when on a mobile compared to a laptop!
 
 ### Wirefarmes
+I decided to draw out my initial wireframes.
+#### Wireframes for bigger screens
+
+#### Wireframes for mobile screens
+
+##### Coloured in wireframes
+
+### Site styles
+
+#### Colours
+* Background colour - #ff9d00 
+* Secondry colour - #000000
+* Text colour  - #000000
+* Secondry text colour  - #ffffff
+* Correct answer colour  - #00a30d
+* Incorrect answer colour  - #c60606
+
+#### Font
+
+* For my font I used 'Raleway', with a backup of sans-serif.
+
+#### Images
+
+* For my images I used [Unsplash.com](https://unsplash.com) and they are credited in [credits](#credits) section.
 
 
 # Technology
