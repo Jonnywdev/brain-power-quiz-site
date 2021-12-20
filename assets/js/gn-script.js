@@ -19,12 +19,12 @@ var choices = new Array();
 var answers = new Array();
 var response = new Array();
 
-questions[0] = '';
+questions[0] = 'Which African Country does Mafia Island belong to?';
 choices[0] = new Array();
-choices[0][0] = '';
-choices[0][1] = '';
-choices[0][2] = '';
-choices[0][3] = '';
+choices[0][0] = 'Togo';
+choices[0][1] = 'Kenya';
+choices[0][2] = 'Tanzania';
+choices[0][3] = 'Sudan';
 answers[0] = choices[0][2];
 
 /**
@@ -151,12 +151,12 @@ function setNextQuestion() {
  * Shows the question on the card.
  */
 function showQuestion(question) {
-    questionElement.innerText =question.question
-     questions.choiceA.forEach(() => {
-         const button = document.createElement('button')
-         button.innerText = answer.text
-         button.classList.add('answer--btn')
-     })
+    // questionElement.innerText =question.question
+    //  questions.choiceA.forEach(() => {
+    //      const button = document.createElement('button')
+    //      button.innerText = answer.text
+    //      button.classList.add('answer--btn')
+    //  })
          
     //     button.addEventListener('click', selectAnswer)
     //     answerbuttons.appendChild(button)
