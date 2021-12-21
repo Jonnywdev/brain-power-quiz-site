@@ -57,6 +57,9 @@ I decided to draw out my initial wireframes.
 
 * For my images I used [Unsplash.com](https://unsplash.com) and they are credited in [credits](#credits) section.
 
+## Features of the Website
+The webiste consists of 3 pages, 2 are accessible from a navigation menu. The other page is accesable through the ...
+
 
 # Technology
 
