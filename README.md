@@ -1,4 +1,4 @@
-![Brian power logo](assets/images/logo-white-rm.png)
+![Brian power logo](assets/images/logo-white-rm-new.png)
 # Brain Power
 
 ## Introduction
