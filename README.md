@@ -128,7 +128,43 @@ The webiste consists of 3 pages, 2 are accessible from a navigation menu. The ot
 * 
 
 # Testing
+## Functionality Testing
 
+## Compatibility Testing
+
+## User Stories Testing
+### As the Website Owner
+- 
+    >   
+- 
+    >   
+- 
+    >   
+
+### As a New Player
+- 
+    >   
+- 
+    >   
+- 
+    >   
+
+### As an Exsisting Player
+- 
+    >   
+- 
+    >   
+- 
+    >  
+
+___
+## Issues Found During Site Development
+- 
+
+## Preformance Testing
+- 
+
+## Code Validation
 
 # Deployment
 
