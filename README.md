@@ -187,6 +187,27 @@ or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started
 this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-power-quiz-site) into your github account.
 
 # Credits
+* To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
+## Code:
+* Hover effect on Quiz cards:[30secondsofcode.org](https://www.30secondsofcode.org/css/s/image-overlay-hover )
+
+## Images
+
+### Unsplash.com
+* [sport.png](https://unsplash.com/photos/lk0T8KLxfqs)
+* [film-tv.png](https://unsplash.com/photos/YvPxyGzaFJ4)
+* [history.png](https://unsplash.com/photos/-rkf6Ducli8)
+* [animal.png](https://unsplash.com/photos/UbjGsvEwnzc)
+* [geography.png](https://unsplash.com/photos/WOF7xn1antA)
+* [literature.png](https://unsplash.com/photos/sfL_QOnmy00)
+* [food.png](https://unsplash.com/photos/6XmQV6GccYU()
+* [science.png](https://unsplash.com/photos/3FtypNvSPn0)
+* [cartoon.png](https://unsplash.com/photos/mou0S7ViElQ)
+* [music.png](https://unsplash.com/photos/lDKmtwvrZZs)
+* [travel.png](https://unsplash.com/photos/AQJ5cLTR_AM)
+
+### Healthline.con
+* [gen-know.png](https://www.healthline.com/health-news/heres-what-happens-when-you-remove-half-your-brain)
 
 # Screenshots
