@@ -104,7 +104,28 @@ The webiste consists of 3 pages, 2 are accessible from a navigation menu. The ot
 - 
 
 # Technology
-
+### HTML5
+* 
+### CSS
+* 
+### Javascript
+* 
+### Font Awesome
+* 
+### Google Fonts
+* 
+### GitHub
+* 
+### Git
+* 
+### Gitpod
+* 
+### Adobe XD
+* 
+### Adobe Photoshop
+* 
+### Adobe Illustrator
+* 
 
 # Testing
 
