@@ -61,27 +61,28 @@ I decided to draw out my initial wireframes.
 The webiste consists of 3 pages, 2 are accessible from a navigation menu. The other page is accesable through the Homepage button (when a quiz is selected).
 
 ## Navigation Bar:
-* 
+* The navigation bar is only visible on the homepage, it is responsive to screen size and will adapt when the size changes.
 
 #### Navigation Scheme:
-- 
-- 
-    - 
-    - 
+- On the left side there will be the logo, which also can be used as a navigation link to the index page.
+- On the right side there are 2 links, which are:
+    - Home
+    - Account
 
 #### Home Page
 * ##### Top Rated Quizes
-- 
-- 
+- This section holds 4 cards, each card has an image relating to the quiz.
+- Each card has a hover effect which brings up the title of each quiz category.
+- Each card in this section is pressable and will link to its relative quiz.
 
 * ##### About Us 
-- 
--  
-- 
+- This section has a short paragraph to give our users an understanding about who we are (The creaters).
+-  It also shares our other game, love maths. It includes an image, which is a screenshot of the game. It also has a button that takes you to the game on a new tab.
 
 * ##### Other Quiz Categories
-- 
-- 
+- This section holds 8 cards, each card has an image relating to the quiz.
+- Each card has a hover effect which brings up the title of each quiz category.
+- These cards an non clickable.
 
 #### Quiz Pages
 * ##### Welcome Page
