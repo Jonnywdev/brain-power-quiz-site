@@ -131,7 +131,6 @@ function startGame() {
     currentQuestionLibrary = 0
     questionWrapper.classList.remove('hide')
     setNextQuestion()
-
 }
 
 /**
