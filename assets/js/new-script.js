@@ -101,6 +101,9 @@ let questions = [
     }
 ]
 
+const SCORE_POINTS = 1
+const MAX_QUESTIONS = 10
+
 startButton.addEventListener('click', startGame)
 
 /**
