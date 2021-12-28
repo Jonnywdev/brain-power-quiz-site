@@ -394,7 +394,7 @@ p {
 }
 
 .question-count p{
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .q-wrapper {
@@ -432,14 +432,12 @@ p {
     font-size: 15px;
 }
 
-#score {
+.correct {
     color: #00a30d;
-    font-weight: bold;
 }
 
-#incorrect {
+.incorrect {
     color: #c7000f;
-    font-weight: bold;
 }
 
 .btns-wrapped {
@@ -448,6 +446,34 @@ p {
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.score-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#score {
+    padding-left: 10px;
+}
+
+#progressBar {
+    width: 50%;
+    height: 2rem;
+    border: 0.2rem solid #ff9d00;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: #ff9d00;
+    width: 0%;
+}
+
+.progress-text {
+    font-size: 15px;
+    text-align: right;
 }
 
 /* congratulations Card */
@@ -512,6 +538,13 @@ p {
     background: #C6C6C6;
     border: 1px transparent;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.answer--p {
+    margin-left: 15px;
+    font-size: 15px;
 }
 
 .answer--btn.correct {

@@ -12,7 +12,66 @@
 </head>
 <body>
 
-    
+    <section id="welcome-section">
+        <!-- info box -->
+        <div class="welcome--card hide" id="welcome--card">
+            <div class="info-title">
+                <span>Rules of the General Knowledge quiz</span>
+            </div>
+            <div class="info-list">
+                <div class="info">1. you will play</div>
+                <div class="info">2. you will have fun</div>
+                <div class="info">3. you will not say no</div>
+                <div class="info">4. you wont win</div>
+                <div class="info">5. you have no choice</div>
+            </div>
+        
+
+            <div class="buttons">
+                <a href="index.html" class="quit">Quit Quiz</a>
+                <button data-type="start" class="btn--blue" id="start-btn">Get Started</button>
+            </div>
+        </div>
+
+        <div class="quiz-card" id="quiz-wrapper">
+            <div class="top-wrapper">
+                <p id="progressText" class="progress-text">
+                    Question
+                </p>
+                <div class="q-wrapper" id="question"> Question</div>
+            </div>
+        
+
+            <div class="answers" id="answer-buttons">
+                <div class="answer--btn">
+                    <p class="answer--p" data-number="1">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p" data-number="2">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p" data-number="3">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p" data-number="4">Choice</p>
+                </div>
+            </div>
+            <div class="bottom-wrapped">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <div class="score-wrapper">
+                    <p>
+                        score
+                    </p>
+                    <h1 id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <script src="assets/js/new-script.js"></script>
 </body>
