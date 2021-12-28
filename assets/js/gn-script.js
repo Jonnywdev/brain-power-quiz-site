@@ -39,9 +39,6 @@ let questions = [
         choiceD : 'Sudan',
         correct : 'C'
     },
-
-    
-
     {
         question : 'A hippophobe is afraid of which animals?',
         choiceA : 'Horses', 
@@ -50,7 +47,6 @@ let questions = [
         choiceD : 'hippopotamuses',
         correct : 'A'
     },
-
     {
         question : 'Who is Erik Weisz better known as?',
         choiceA : 'Eminem', 
@@ -59,7 +55,6 @@ let questions = [
         choiceD : 'Drake',
         correct : 'C'
     },
-
     {
         question : 'What is the longest that an animal has ever lived? (That we know of)',
         choiceA : '17 years', 
