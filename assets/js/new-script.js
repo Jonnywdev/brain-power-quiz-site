@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-btn')
 const welcomeScreen = document.getElementById('welcome--card')
 const questionWrapper = document.getElementById('quiz-wrapper')
-const choices = Array.from(document.getElementsByClassName('choice-text'))
+const choices = Array.from(document.getElementsByClassName('choice'))
 const progressText = document.getElementById('progressText')
 const scoreText = document.getElementById('score')
 const progressBarFull = document.getElementById('progressBarFull')
@@ -122,6 +122,7 @@ beginGame = () => {
     score = 0
     availableQestions = [...questions]
     console.log('beginGame')
+    getNewQuestion()
 }
 
 getNewQuestion = () => {
@@ -158,5 +159,24 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset['number']
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+        }, 1000)
+
     })
 })
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+
+beginGame()
