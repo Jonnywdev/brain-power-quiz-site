@@ -115,3 +115,22 @@ function startGame() {
     welcomeScreen.classList.add('hide')
     questionWrapper.classList.remove('hide')
 }
+
+beginGame = () => {
+    questionCounter = 0
+    score = 0
+    availableQestions = [...questions]
+    console.log('beginGame')
+}
+
+getNewQuestion = () => {
+    if(availableQestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+
+        return window.location.assign('/end.html')
+    }
+
+    questionCounter++ 
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+}
