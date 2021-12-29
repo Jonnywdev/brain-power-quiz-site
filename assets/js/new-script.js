@@ -5,6 +5,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'))
 const progressText = document.getElementById('progressText')
 const scoreText = document.getElementById('score')
 const progressBarFull = document.getElementById('progressBarFull')
+const question = document.getElementById('question')
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -137,4 +138,14 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQestions.length)
     currentQuestion = availableQestions[questionsIndex]
     question.innerText = currentQuestion.question
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
 }
+
