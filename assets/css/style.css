@@ -437,7 +437,7 @@ p {
 }
 
 .incorrect {
-    color: #c7000f;
+    background: #f20f2b !important;
 }
 
 .btns-wrapped {
@@ -474,6 +474,21 @@ p {
 .progress-text {
     font-size: 15px;
     text-align: right;
+}
+
+/* end card */
+
+.end-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    overflow: hidden;
+    box-shadow: 2px 2px 18px #000000;
 }
 
 /* congratulations Card */
