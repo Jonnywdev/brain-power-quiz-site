@@ -181,13 +181,17 @@ incrementScore = num => {
     const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
 
     let scorePForEndText = (scorePercentage >= 80) ? "Wow you smashed it! Congratulations.":
-                  (scorePercentage >= 60) ? "Well done,you scored over 60%!":
+                  (scorePercentage >= 60) ? "Well done, you scored over 60%!":
                   (scorePercentage >= 40) ? "Ahh you could've done better!":
-                  (scorePercentage >= 20) ? "Is that the best yo can do? Atleast its not 0":
+                  (scorePercentage >= 20) ? "Is that the best you can do? Atleast its not 0":
                   "What was that?";
 
     endText.innerHTML = `${scorePForEndText}`
 
 }
+
+function refreshPage(){
+    window.location.reload();
+} 
 
 beginGame()
