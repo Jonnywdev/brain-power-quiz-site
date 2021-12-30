@@ -491,6 +491,18 @@ p {
     box-shadow: 2px 2px 18px #000000;
 }
 
+.top-text {
+    padding: 40px;
+    text-align: center;
+}
+
+.buttons-wrapper {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* congratulations Card */
 #congrats-section {
     position: relative;
