@@ -6,6 +6,9 @@ const progressText = document.getElementById('progressText')
 const scoreText = document.getElementById('score')
 const progressBarFull = document.getElementById('progressBarFull')
 const question = document.getElementById('question')
+const endCard = document.getElementById('end')
+const totalScore = document.getElementById('total-score')
+const endText = document.getElementById('end-sentence')
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -130,7 +133,7 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score)
 
         questionWrapper.classList.add('hide')
-        
+        endCard.classList.remove('hide')
     }
 
     questionCounter++ 
@@ -178,6 +181,27 @@ choices.forEach(choice => {
 incrementScore = num => {
     score +=num
     scoreText.innerText = score
+
+    totalScore.innerText = `You scored ${score} out of ${MAX_QUESTIONS}`
+
+    const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
+
+    let scorePForEndText = (scorePercentage >= 80) ? "Wow you smashed it! Congratulations.":
+                  (scorePercentage >= 60) ? "Well done,you scored over 60%!":
+                  (scorePercentage >= 40) ? "Ahh you could've done better!":
+                  (scorePercentage >= 20) ? "Is that the best yo can do? Atleast its not 0":
+                  "What was that?";
+
+    endText.innerHTML = `${scorePForEndText}`
+
 }
+
+
+
+    
+
+
+
+
 
 beginGame()

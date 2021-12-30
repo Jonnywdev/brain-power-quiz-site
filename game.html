@@ -14,7 +14,7 @@
 
     <section id="welcome-section">
         <!-- info box -->
-        <div class="welcome--card hide" id="welcome--card">
+        <div class="welcome--card" id="welcome--card">
             <div class="info-title">
                 <span>Rules of the General Knowledge quiz</span>
             </div>
@@ -71,13 +71,16 @@
             </div>
         </div>
 
-        <div class="end-card">
+        <div class="end-card hide" id="end">
             <div class="top-text">
-                <h1>Yay you did well</h1>
-            </div>
-            <div class="buttons-wrapper">
-                <button data-type="start" class="btn--blue" id="restart-btn">Restart</button>
-                <a href="index.html" class="quit">Home</a>
+                <h1 id="end-sentence"></h1>
+                <h1 id="total-score"></h1>
+            
+                <div class="buttons-wrapper">
+                    <button data-type="start" class="btn--blue" id="restart-btn">Restart</button>
+                    <a href="index.html" class="quit">Home</a>
+                </div>
+
             </div>
         </div>
 

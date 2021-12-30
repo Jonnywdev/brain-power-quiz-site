@@ -492,8 +492,11 @@ p {
 }
 
 .top-text {
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .buttons-wrapper {
