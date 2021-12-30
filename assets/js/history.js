@@ -18,84 +18,84 @@ let availableQestions = []
 
 let questions = [
     {
-        question: '',
-        choice1: '', 
-        choice2: '',
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'Which of these countries did the Soviet Union NEVER invade?',
+        choice1: 'Afghanistan', 
+        choice2: 'Sweden',
+        choice3: 'Finland',
+        choice4: 'Poland',
+        answer: 2
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'Where did Zoroastrianism originate?',
+        choice1: 'Egypt', 
+        choice2: 'India', 
+        choice3: 'Persia', 
+        choice4: 'South America',
+        answer: 3
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'Which of these writers was NOT English?',
+        choice1: 'Jane Austen', 
+        choice2: 'Agatha Christie', 
+        choice3: 'Charles Dickens',
+        choice4: 'Oscar Wilde',
+        answer: 4
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'What does a dendrochronologist use to establish dates?',
+        choice1: 'Tree Rings', 
+        choice2: 'Solar Eclipses', 
+        choice3: 'Ice Cores', 
+        choice4: 'Carbon Isotopes',
+        answer: 1
     },
     {
-        question: '',
-        choice1: '',
-        choice2: '', 
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'Why did whalers hunt sperm whales?',
+        choice1: 'For Oil To Make Candles',
+        choice2: 'For Sport', 
+        choice3: 'For Meat',
+        choice4: 'For Skin To Make Leather',
+        answer: 1
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'How many wives did Henry VIII have?',
+        choice1: '5', 
+        choice2: '7', 
+        choice3: '6', 
+        choice4: '8',
+        answer: 3
     },
     {
-        question: '',
-        choice1: '',
-        choice2: '',
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'When was the last time Moscow was ever captured by a foreign power?',
+        choice1: 'By Napoleon in 1812',
+        choice2: 'By hittler in 1942',
+        choice3: 'Never', 
+        choice4: 'By Ogedei Khan in 1238',
+        answer: 1
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'Which of the following was NOT originally invented in China?',
+        choice1: 'Silk', 
+        choice2: 'Gunpowder', 
+        choice3: 'Paper Money', 
+        choice4: 'Concrete',
+        answer: 4
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'When did Columbus "discovers" America?',
+        choice1: '1499', 
+        choice2: '1481', 
+        choice3: '1492',
+        choice4: '1489',
+        answer: 3
     },
     {
-        question: '', 
-        choice1: '',
-        choice2: '',
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'When did the Wright Brothers fly the first airplane?', 
+        choice1: '1914',
+        choice2: '1903',
+        choice3: '1921',
+        choice4: '1910',
+        answer: 2
         
     }
 ]
@@ -192,3 +192,13 @@ incrementScore = num => {
 }
 
 beginGame()
+
+function restartGame() {
+
+}
+
+function startGame() {
+    console.log('started')
+    welcomeScreen.classList.add('hide')
+    questionWrapper.classList.remove('hide')
+}
