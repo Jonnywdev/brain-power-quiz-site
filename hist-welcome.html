@@ -11,30 +11,81 @@
     <title>History Quiz</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <header id="head-bg">
-        <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
-        <!-- Navigation Menu -->
-        <nav id="menu">
-            <ul>
-                <li>
-                    <a href="index.html" class="left">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="left">Account</a>
-                </li>
-            </ul>   
-        </nav>
-    </header>
 
     <section id="welcome-section">
-        <div class="welcome-card">
-            <h1>Welcome to the "" Quiz!</h1>
-            <button data-type="start" class="btn btn--gray">Get Started</button>
+        <!-- info box -->
+        <div class="welcome--card" id="welcome--card">
+            <div class="info-title">
+                <span>Rules of the History Quiz</span>
+            </div>
+            <div class="info-list">
+                <div class="info">1. you will play</div>
+                <div class="info">2. you will have fun</div>
+                <div class="info">3. you will not say no</div>
+                <div class="info">4. you wont win</div>
+                <div class="info">5. you have no choice</div>
+            </div>
+        
+
+            <div class="buttons">
+                <a href="index.html" class="quit">Quit Quiz</a>
+                <button data-type="start" class="btn--blue" id="start-btn">Get Started</button>
+            </div>
         </div>
+
+        <div class="quiz-card hide" id="quiz-wrapper">
+            <div class="top-wrapper">
+                <p id="progressText" class="progress-text">
+                    Question
+                </p>
+                <div class="q-wrapper" id="question"> Question</div>
+            </div>
+        
+
+            <div class="answers" id="answer-buttons">
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="1">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="2">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="3">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="4">Choice</p>
+                </div>
+            </div>
+            <div class="bottom-wrapped">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <div class="score-wrapper">
+                    <p>
+                        Score:
+                    </p>
+                    <h1 id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-card hide" id="end">
+            <div class="top-text">
+                <h1 id="end-sentence"></h1>
+                <h1 id="total-score"></h1>
+            
+                <div class="buttons-wrapper">
+                    <button data-type="start" class="btn--blue" id="restart-btn">Restart</button>
+                    <a href="index.html" class="quit">Home</a>
+                </div>
+
+            </div>
+        </div>
+
     </section>
-  
-    
-    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/history.js"></script>
 </body>
 </html>
