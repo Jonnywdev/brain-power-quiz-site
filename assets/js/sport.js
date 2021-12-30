@@ -18,84 +18,84 @@ let availableQestions = []
 
 let questions = [
     {
-        question: '',
-        choice1: '', 
-        choice2: '',
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'What is the diameter of a basketball hoop in inches?',
+        choice1: '18 Inches', 
+        choice2: '16 Inches',
+        choice3: '20 Inches',
+        choice4: '22 Inches',
+        answer: 1
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'What do you call it when a bowler makes three strikes in a row?',
+        choice1: '3 Of A Kind', 
+        choice2: 'Rabit', 
+        choice3: 'Eagle', 
+        choice4: 'Turkey',
+        answer: 4
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'What is the national sport of Canada?',
+        choice1: 'Ice Hockey', 
+        choice2: 'Lacrosse', 
+        choice3: 'Soccer',
+        choice4: 'Tenis',
+        answer: 2
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'How many dimples does an average golf ball have?',
+        choice1: '318', 
+        choice2: '372', 
+        choice3: '336', 
+        choice4: '361',
+        answer: 3
     },
     {
-        question: '',
-        choice1: '',
-        choice2: '', 
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'What country has competed the most times in the Summer Olympics yet has not won a gold medal?',
+        choice1: 'The Philippines',
+        choice2: 'Georgia', 
+        choice3: 'Finland',
+        choice4: 'Canada',
+        answer: 1
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'In the 1971 Olympics, Nadia Comaneci was the first gymnast to score a perfect score. What country was she representing?',
+        choice1: 'Germany', 
+        choice2: 'Romania', 
+        choice3: 'Russia', 
+        choice4: 'China',
+        answer: 2
     },
     {
-        question: '',
-        choice1: '',
-        choice2: '',
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'How many medals did China win at the Beijing Olympics?',
+        choice1: '100',
+        choice2: '90',
+        choice3: '85', 
+        choice4: '110',
+        answer: 1
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 
+        question: 'What does NBA stand for?',
+        choice1: 'National Basketball Alliance', 
+        choice2: 'National Basketball Alikeness', 
+        choice3: 'National Basketball Association', 
+        choice4: 'National Basketball Antagonism',
+        answer: 3
     },
     {
-        question: '',
-        choice1: '', 
-        choice2: '', 
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'What color are the goalposts in American football?',
+        choice1: 'White', 
+        choice2: 'Yellow', 
+        choice3: 'Grey',
+        choice4: 'Orange',
+        answer: 2
     },
     {
-        question: '', 
-        choice1: '',
-        choice2: '',
-        choice3: '',
-        choice4: '',
-        answer: 
+        question: 'What sport is a lot like softball?', 
+        choice1: 'Dogeball',
+        choice2: 'Cricket',
+        choice3: 'Squash',
+        choice4: 'Baseball',
+        answer: 4
         
     }
 ]
