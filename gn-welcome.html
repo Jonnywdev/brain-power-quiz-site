@@ -15,58 +15,77 @@
     <section id="welcome-section">
         <!-- info box -->
         <div class="welcome--card" id="welcome--card">
-                <div class="info-title">
-                    <span>Rules of the General Knowledge quiz</span>
-                </div>
-                <div class="info-list">
-                    <div class="info">1. you will play</div>
-                    <div class="info">2. you will have fun</div>
-                    <div class="info">3. you will not say no</div>
-                    <div class="info">4. you wont win</div>
-                    <div class="info">5. you have no choice</div>
-                </div>
-            
+            <div class="info-title">
+                <span>Rules of the General Knowledge quiz</span>
+            </div>
+            <div class="info-list">
+                <div class="info">1. you will play</div>
+                <div class="info">2. you will have fun</div>
+                <div class="info">3. you will not say no</div>
+                <div class="info">4. you wont win</div>
+                <div class="info">5. you have no choice</div>
+            </div>
+        
 
-                <div class="buttons">
-                    <a href="index.html" class="quit">Quit Quiz</a>
-                    <button data-type="start" class="btn--blue" id="start-btn">Get Started</button>
-                </div>
+            <div class="buttons">
+                <a href="index.html" class="quit">Quit Quiz</a>
+                <button data-type="start" class="btn--blue" id="start-btn">Get Started</button>
+            </div>
         </div>
 
         <div class="quiz-card hide" id="quiz-wrapper">
-
             <div class="top-wrapper">
-                <div class="question-count">
-                    <p>Question: <span id="question-count">0</span>/10</p>
-                </div>
-                <div class="q-wrapper" id="question">
-                </div>
+                <p id="progressText" class="progress-text">
+                    Question
+                </p>
+                <div class="q-wrapper" id="question"> Question</div>
             </div>
-            
+        
+
             <div class="answers" id="answer-buttons">
-                
-
-                <button class="answer--btn" id="A" onclick="checkAnswer('A')">Answer 1</button>
-                <button class="answer--btn" id="B" onclick="checkAnswer('B')">Answer 2</button>
-                <button class="answer--btn" id="C" onclick="checkAnswer('C')">Answer 3</button>
-                <button class="answer--btn" id="D" onclick="checkAnswer('D')">Answer 4</button>
-            </div>
-
-            <div id="progress" class="prog"></div>
-            
-            <div class="bottom-wrapped">
-                <div class="score-area" id="score-area">
-                    Score: <span id="score-count">0</span>/10</p>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="1">Choice</p>
                 </div>
-                <button data-type="next" class="next-btn hide" id="next">Next</button>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="2">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="3">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="4">Choice</p>
+                </div>
+            </div>
+            <div class="bottom-wrapped">
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <div class="score-wrapper">
+                    <p>
+                        Score:
+                    </p>
+                    <h1 id="score">
+                        0
+                    </h1>
+                </div>
             </div>
         </div>
-        <br>
 
-        
+        <div class="end-card hide" id="end">
+            <div class="top-text">
+                <h1 id="end-sentence"></h1>
+                <h1 id="total-score"></h1>
+            
+                <div class="buttons-wrapper">
+                    <button data-type="start" class="btn--blue" id="restart-btn">Restart</button>
+                    <a href="index.html" class="quit">Home</a>
+                </div>
+
+            </div>
+        </div>
+
     </section>
-  
-    
-    <script src="assets/js/new-script.js"></script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

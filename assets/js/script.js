@@ -1,161 +1,214 @@
-// select all elements that are needed 
-const welcomeScreen = document.getElementById('welcome-card');
-const start = document.getElementById('start-game-btn');
-const quizCard = document.getElementById('quiz-wrapper');
-const questionCounter = document.getElementById('question-count');
-const question = document.getElementById('question');
-const choiceA = document.getElementById('A');
-const choiceB = document.getElementById('B');
-const choiceC = document.getElementById('C');
-const choiceD = document.getElementById('D');
-const score = document.getElementById('score-area');
-const progress = document.getElementById('progress');
+const generalKnowledgeQuiz = document.getElementById('general-knowlege')
+const sportQuiz = document.getElementById('sport')
+const filmAndTvQuiz = document.getElementById('film-tv')
+const historyQuiz = document.getElementById('history')
+const startButton = document.getElementById('start-btn')
+const welcomeScreen = document.getElementById('welcome--card')
+const questionWrapper = document.getElementById('quiz-wrapper')
+const choices = Array.from(document.getElementsByClassName('choice'))
+const progressText = document.getElementById('progressText')
+const scoreText = document.getElementById('score')
+const progressBarFull = document.getElementById('progressBarFull')
+const question = document.getElementById('question')
+const endCard = document.getElementById('end')
+const totalScore = document.getElementById('total-score')
+const endText = document.getElementById('end-sentence')
 
-let shuffleQuestions, currentQuestionLibrary
+let currentQuestion = {}
+let acceptingAnswers = true
+let score = 0
+let questionCounter = 0
+let availableQestions = []
 
-start.addEventListener('click', startGame)
-
-/**
- * Starts the game once the start game button has been clicked
-*/
-function startGame() {
-    console.log('Started')
-    welcomeScreen.classList.add('hide')
-    shuffleQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionLibrary = 0
-    quizCard.classList.remove('hide')
-
-}
-
-// const lastQuestion = questions.length -1;
-// let runningQuestion = 0;
-
-/**
- * Show the question
- */
-function showQuestion() {
-    let q = questions[runningQuestion];
-    question.innerHTML = "<p>"+ q.question +"</p>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-    choiceD.innerHTML = q.choiceD;
-}
-
-/**
- * Show the progress 
- */
-function showProgress() {
-    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
-        ProgressEvent.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
-    }
-}
-
-/**
- * Create all of the Questions 
- */
-
-
-const questions = [
+let generalKnowledgeQuestions = [
     {
-        question : 'Which African Country does Mafia Island belong to?',
-        answers: [
-            { text: 'Togo', correct: false},
-            { text: 'Kenya', correct: false},
-            { text: 'Tanzania', correct: true},
-            { text: 'Sudan', correct: false}
-        ]
+        question: 'Which African Country does Mafia Island belong to?',
+        choice1: 'Togo', 
+        choice2: 'Kenya',
+        choice3: 'Tanzania',
+        choice4: 'Sudan',
+        answer: 3
+    },
+    {
+        question: 'A hippophobe is afraid of which animals?',
+        choice1: 'Horses', 
+        choice2: 'Cows', 
+        choice3: 'Bats', 
+        choice4: 'hippopotamuses',
+        answer: 1
+    },
+    {
+        question: 'Who is Erik Weisz better known as?',
+        choice1: 'Eminem', 
+        choice2: 'Kit Harrington', 
+        choice3: 'Harry Houdini',
+        choice4: 'Drake',
+        answer: 3
+    },
+    {
+        question: 'What is the longest that an animal has ever lived? (That we know of)',
+        choice1: '17 years', 
+        choice2: '49 years', 
+        choice3: '86 years', 
+        choice4: '142 years',
+        answer: 3
+    },
+    {
+        question: 'How many rings are on the Olympic flag',
+        choice1: 'None',
+        choice2: '5', 
+        choice3: '7',
+        choice4: '4',
+        answer: 2
     },
 
     {
-        question : 'A hippophobe is afraid of which animals?',
-        answers: [
-            { text: 'Horses', correct: true},
-            { text: 'Cows', correct: false},
-            { text: 'Bats', correct: false},
-            { text: 'hippopotamuses', correct: false}
-        ]
+        question: 'What is a tarsier?',
+        choice1: 'A primate', 
+        choice2: 'A lizard', 
+        choice3: 'A bird', 
+        choice4: 'A fish',
+        answer: 1
     },
 
     {
-        question : 'Who is Erik Weisz better known as?',
-        answers: [
-            { text: 'Eminem', correct: false},
-            { text: 'Kit Harrington', correct: false},
-            { text: 'Harry Houdini', correct: true},
-            { text: 'Drake', correct: false}
-        ]
+        question: 'How did Spider-man get his powers?',
+        choice1: 'Military experiment gone awry',
+        choice2: 'Born with them',
+        choice3: 'Woke up with them after a strange dream', 
+        choice4: 'Bitten by a radioactive spider',
+        answer: 4
     },
 
     {
-        question : 'What is the longest that an animal has ever lived? (That we know of)',
-        answers: [
-            { text: '17 years', correct: false},
-            { text: '49 years', correct: false},
-            { text: '86 years', correct: true},
-            { text: '142 years', correct: false}
-        ]
+        question: 'In darts whats the most points you can score with a single throw?',
+        choice1: '60', 
+        choice2: '100', 
+        choice3: '50', 
+        choice4: '20',
+        answer: 1
     },
 
     {
-        question : 'How many rings are on the Olympic flag',
-        answers: [
-            { text: 'None', correct: false},
-            { text: '5', correct: true},
-            { text: '7', correct: false},
-            { text: '4', correct: false}
-        ]
+        question: 'Which of these animals does NOT appear in the Chinese zodiac?',
+        choice1: 'Rabbit', 
+        choice2: 'Dragon', 
+        choice3: 'Dog',
+        choice4: 'Bear',
+        answer: 4
     },
 
     {
-        question : 'What is a tarsier?',
-        answers: [
-            { text: 'A primate', correct: true},
-            { text: 'A lizard', correct: false},
-            { text: 'A bird', correct: false},
-            { text: 'A fish', correct: false}
-        ]
-    },
-
-    {
-        question : 'How did Spider-man get his powers?',
-        answers: [
-            { text: 'Military experiment gone awry', correct: false},
-            { text: 'Born with them', correct: false},
-            { text: 'Woke up with them after a strange dream', correct: false},
-            { text: 'Bitten by a radioactive spider', correct: true}
-        ]
-    },
-
-    {
-        question : 'In darts whats the most points you can score with a single throw?',
-        answers: [
-            { text: '60', correct: true},
-            { text: '100', correct: false},
-            { text: '50', correct: false},
-            { text: '20', correct: false}
-        ]
-    },
-
-    {
-        question : 'Which of these animals does NOT appear in the Chinese zodiac?',
-        answers: [
-            { text: 'Rabbit', correct: false},
-            { text: 'Dragon', correct: false},
-            { text: 'Dog', correct: false},
-            { text: 'Bear', correct: true}
-        ]
-    },
-
-    {
-        question : 'In the nursery rhyme, how many blackbirds were baked in a pie?',
-        answers: [
-            { text: '11', correct: false},
-            { text: '67', correct: false},
-            { text: '24', correct: true},
-            { text: '38', correct: false}
-        ]
+        question: 'In the nursery rhyme, how many blackbirds were baked in a pie?', 
+        choice1: "11",
+        choice2: '67',
+        choice3: '24',
+        choice4: '38',
+        answer: 3
+        
     }
 ]
 
+const SCORE_POINTS = 1
+const MAX_QUESTIONS = 10
 
+generalKnowledgeQuiz.addEventListener('click', chooseRightGame)
+sportQuiz.addEventListener('click', chooseRightGame)
+historyQuiz.addEventListener('click', chooseRightGame)
+filmAndTvQuiz.addEventListener('click', chooseRightGame)
+
+startButton.addEventListener('click', startGame)
+
+function chooseRightGame() {
+    if (generalKnowledgeQuiz.clicked) {
+        
+    }
+}
+
+/**
+ * Starts the game once
+ * start game button has been clicked
+ */
+function startGame() {
+    console.log('started')
+    welcomeScreen.classList.add('hide')
+    questionWrapper.classList.remove('hide')
+}
+
+beginGame = () => {
+    questionCounter = 0
+    score = 0
+    availableQestions = [...questions]
+    console.log('beginGame')
+    getNewQuestion()
+}
+
+getNewQuestion = () => {
+    if(availableQestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+
+        questionWrapper.classList.add('hide')
+        endCard.classList.remove('hide')
+    }
+
+    questionCounter++ 
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+
+    const questionsIndex = Math.floor(Math.random() * availableQestions.length)
+    currentQuestion = availableQestions[questionsIndex]
+    question.innerText = currentQuestion.question
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
+}
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+        }, 1000)
+
+    })
+})
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+
+    totalScore.innerText = `You scored ${score} out of ${MAX_QUESTIONS}`
+
+    const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
+
+    let scorePForEndText = (scorePercentage >= 80) ? "Wow you smashed it! Congratulations.":
+                  (scorePercentage >= 60) ? "Well done,you scored over 60%!":
+                  (scorePercentage >= 40) ? "Ahh you could've done better!":
+                  (scorePercentage >= 20) ? "Is that the best yo can do? Atleast its not 0":
+                  "What was that?";
+
+    endText.innerHTML = `${scorePForEndText}`
+
+}
+
+beginGame()
