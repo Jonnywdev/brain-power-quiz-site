@@ -383,7 +383,6 @@ p {
     border-bottom: 1px solid lightgray;
     display: flex;
     flex-direction: column;
-    align-items: left;
     font-size: 20px;
     font-weight: 800;
     padding: 0 15px 15px 15px;
@@ -455,20 +454,6 @@ p {
 
 #score {
     padding-left: 10px;
-}
-
-#progressBar {
-    width: 50%;
-    height: 2rem;
-    border: 0.2rem solid #ff9d00;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-#progressBarFull {
-    height: 100%;
-    background: #ff9d00;
-    width: 0%;
 }
 
 .progress-text {
@@ -598,6 +583,81 @@ p {
     .lm-btn {
         font-size: 20px;
     }
+
+    /* quiz page - welcome section */
+    .welcome--card {
+        width: 65%;
+    }
+
+    .info-title {
+        height: 80px;
+        font-size: 25px;
+    }
+
+    .welcome--card .info-list {
+        padding: 30px 35px;
+    }
+
+    .welcome--card .info-list .info {
+        font-size: 20px;
+    }
+
+    .welcome--card .buttons {
+        height: 90px;
+    }
+
+    .btn--blue {
+        height: 50px;
+        width: 130px;
+        font-size: 17px;
+    }
+
+    .quit {
+        height: 50px;
+        width: 130px;
+        font-size: 17px;
+    }
+
+
+    /* quiz page - quiz section */
+    .quiz-card {
+        width: 65%;
+    }
+
+    .top-wrapper {
+        font-size: 25px;
+    }
+
+    .progress-text {
+        font-size: 20px;
+    }
+
+    .answer--btn {
+        margin-bottom: 1rem;
+    }
+
+    .answer--p {
+        font-size: 20px;
+    }
+
+    .score-wrapper p {
+        font-size: 20px;
+    }
+
+    /* quiz page - end section */
+    .end-card {
+        width: 65%;
+    }
+
+    #end-sentence {
+        font-size: 25px;
+    }
+
+    #total-score {
+        font-size: 20px;
+    }
+
+        
 }
 
 @media (max-width: 900px) {
@@ -631,38 +691,83 @@ p {
         font-size: 15px;
     }
 
-    /* welcome page */
-
-    .welcome-card {
-        margin: 1.5em 2.5em 0 2.5em;
-        padding: 3em 2em;
+    /* quiz page - welcome section */
+    .welcome--card {
+        width: 80%;
     }
 
-    #welcome-section {
-        top: 9rem;
+    .info-title {
+        font-size: 20px;
     }
 
-    /* quiz page */
-    #quiz-section {
-        top: 9rem;
+    .welcome--card .info-list .info {
+        font-size: 18px;
     }
 
+    .welcome--card .info-list {
+        padding: 15px 35px;
+    }
+
+    .quit {
+        height: 40px;
+        width: 115px;
+        font-size: 15px;
+    }
+
+    .btn--blue {
+        height: 40px;
+        width: 115px;
+        font-size: 15px;
+    }
+
+    /* quiz page - quiz section */
     .quiz-card {
-        margin: 1.5em 5em;
+        width: 80%;
     }
 
-    .answer--btn {
-        font-size: 10px;
+    .top-wrapper {
+        font-size: 20px;
+        padding: 0 20px 15px 20px;
     }
 
-    .scores {
-        padding: 25px 15px 10px 15px;
+    .progress-text {
+        font-size: 15px;
     }
 
-    .welcome-card h1 {
-        font-size: 2em;
+    .answers {
+        margin: 25px;
     }
 
+    .answer--p {
+        font-size: 18px;
+    }
+
+    .score-wrapper p {
+        font-size: 15px;
+    }
+
+    #score {
+        padding-left: 15px;
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+
+    /* quiz page - end section */
+    .end-card {
+        width: 80%;
+    }
+
+    .top-text {
+        padding: 40px;
+    }
+
+    #end-sentence {
+        font-size: 20px;
+    }
+
+    #total-score {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -719,27 +824,6 @@ p {
     #last-section {
         top: 8rem;
     }
-
-    /* quiz page */
-    #quiz-section {
-        top: 7rem;
-    }
-
-    .q-wrapper {
-        width: 70%;
-    }
-
-    .answer--btn {    
-        width: 150px;  
-        height: 60px;
-    }
-
-    .btn {
-        width: 100px;
-        height: 40px;
-    }
-
-
 }
 
 @media (max-width: 500px) {
@@ -761,55 +845,46 @@ p {
         padding-bottom: 2.5em;
     }
 
-    /* welcome */
-    .welcome-card h1 {
-        font-size: 1.5em;
+    /* quiz page - welcome section */
+    .info-title {
+        font-size: 17px;
     }
 
-    .btn {
-        font-size: 10px;
+    .welcome--card .info-list .info {
+        font-size: 16px;
+        margin: 20px 0;
     }
 
-    /* question page */
-    .quiz-card {
-        margin: 1.5em 1.5em;
-        padding: 1.5em 1.5em;
+    .welcome--card .buttons {
+        justify-content: space-between;
+    }
+
+    /* quiz page - quiz section */
+    .top-wrapper {
+        align-items: center;
+    }
+
+    .q-wrapper {
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    /* quiz page - end section */
+    #end-sentence {
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    .buttons-wrapper {
+        padding: 50px 40px;
     }
 }
 
 @media (max-width: 425px) {
-    /* quiz section */
-    .question-count {
-        width: 100%;
-    }
-
-    .q-wrapper {
-        width: 100%;
-    }
-
-    .bottom-wrapped {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-end;
-    }
-
-    .score-area {
-        width: 100%;
-    }
-
-    .answer--btn {
-        width: 100%;
-        margin: 0 0 15px 0;
-    }
-
-    .scores {
+    
+    /* quiz page - welcome section */
+    .info-title {
         font-size: 15px;
-        text-align: center;
-    }
-
-    .answers {
-        margin-top: 7rem;
-        width: 100%;
     }
 
 }
@@ -838,9 +913,13 @@ p {
     .card-wrapper {
         column-count: 1;
     }
-    /* btn */
-    .btn--gray {
-        margin: 15px;
+    
+    /* quiz page - welcome section */
+    .info-title {
+        font-size: 20px;
+        justify-content: center;
+        width: 78%;
+        text-align: center;
     }
 
 }
@@ -865,10 +944,46 @@ p {
         font-size: 1em;
     }
 
+    /* quiz page - welcome section */
+    .welcome--card {
+        width: 90%;
+    }
 
-    /* congrats */
-    #congrats-section {
-        position: relative;
-        top: 5rem;
+    .info-title {
+        width: 74%;
+    }
+
+    .welcome--card .info-list {
+        padding: 15px 35px 20px 35px;
+    }
+
+    .btn--blue {
+        font-size: 13px;
+    }
+
+    .quit {
+        font-size: 13px;
+    }    
+
+    /* quiz page - quiz section */
+    .quiz-card {
+        width: 90%;
+    }
+
+    .top-wrapper {
+        font-size: 17px;
+    }
+
+    .progress-text {
+        font-size: 13px;
+    }
+
+    .answer--p {
+        font-size: 15px;
+    }
+    
+    /* quiz page -  end section */
+    .buttons-wrapper {
+        padding: 50px 0;
     }
 }
