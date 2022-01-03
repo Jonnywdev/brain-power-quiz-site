@@ -9,7 +9,7 @@ const question = document.getElementById('question')
 const endCard = document.getElementById('end')
 const totalScore = document.getElementById('total-score')
 const endText = document.getElementById('end-sentence')
-const chosenNicknames = JSON.parse(localStorage.getItem('nicknames'))
+const myForm = document.getElementById('nicknames-form')
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -106,10 +106,21 @@ let questions = [
     }
 ]
 
+let nickname = []
+
 const SCORE_POINTS = 1
 const MAX_QUESTIONS = 10
 
 startButton.addEventListener('click', startGame)
+
+myForm.addEventListener('submit', addNickname)
+
+function addNickname(e) {
+    e.preventDefault()
+
+    const userNicknameInput = document.getElementById('input-for-nickname').value
+    localStorage.setItem(nickname, JSON.stringify(userNicknameInput))
+}
 
 /**
  * Starts the game once
