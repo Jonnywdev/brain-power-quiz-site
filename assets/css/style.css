@@ -323,7 +323,7 @@ p {
 
 /* nicnames section in welcome card */
 .nicknames {
-    height: 60px;
+    height: 75px;
     padding: 0 35px;
     border-top: 1px solid lightgray;
 }
@@ -333,14 +333,33 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
+
+#nick-text {
+    margin-top: 5px;
+}
+
 
 #input-for-nickname {
     width: 70%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #submit {
     width: 25%;
+    margin: 0 5px;
+    height: 30px;
+    color: #000;
+    background: #ff9d00;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
 } 
 
 .btn--blue {
