@@ -73,7 +73,6 @@ p {
 #menu li {
     display: inline;
     list-style-type: none;
-    margin-right: 10px;
 }
 
 #menu a  {
@@ -566,6 +565,20 @@ p {
     color: #fff;
 }
 
+/* account page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nickname-entry {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
 
 
 /* Media Queries */
@@ -929,11 +942,6 @@ p {
     #menu {
         font-size: 60%;
         line-height: 0;
-    }
-
-    /* welcome */
-    #welcome-section {
-        top: 6rem;
     }
 
     .welcome-card {
