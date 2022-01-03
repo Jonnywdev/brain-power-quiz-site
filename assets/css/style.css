@@ -321,6 +321,28 @@ p {
     border-top: 1px solid lightgray;
 }
 
+/* nicnames section in welcome card */
+.nicknames {
+    height: 60px;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-for-nickname {
+    width: 70%;
+}
+
+#submit {
+    width: 25%;
+} 
+
 .btn--blue {
     margin: 0 5px;
     height: 40px;
@@ -567,12 +589,7 @@ p {
 
 /* account page */
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .nickname-entry {
     width: 100%;
