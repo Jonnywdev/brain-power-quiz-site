@@ -11,6 +11,7 @@ const totalScore = document.getElementById('total-score')
 const endText = document.getElementById('end-sentence')
 const myForm = document.getElementById('nicknames-form')
 
+
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
@@ -114,7 +115,9 @@ const MAX_QUESTIONS = 10
 startButton.addEventListener('click', startGame)
 
 myForm.addEventListener('submit', addNickname)
-
+/**
+ * Adds the users nickname to local storage 
+ */
 function addNickname(e) {
     e.preventDefault()
 
@@ -198,12 +201,14 @@ incrementScore = num => {
     const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
 
     
+    
 
-    let scorePForEndText = (scorePercentage >= 80) ? "Wow you smashed it! Congratulations.":
-                  (scorePercentage >= 60) ? `Well done, ${nickname} you scored over 60%!`:
-                  (scorePercentage >= 40) ? "Ahh you could've done better!":
-                  (scorePercentage >= 20) ? "Is that the best you can do? Atleast its not 0":
-                  "What was that?";
+
+    let scorePForEndText = (scorePercentage >= 80) ? `Wow ${window.localStorage.getItem(nickname)} you smashed it! Congratulations.`:
+                  (scorePercentage >= 60) ? `Well done, ${window.localStorage.getItem(nickname)} you scored over 60%!`:
+                  (scorePercentage >= 40) ? `Ahh you could've done better ${window.localStorage.getItem(nickname)}!`:
+                  (scorePercentage >= 20) ? `Is that the best you can do ${window.localStorage.getItem(nickname)}? Atleast its not 0`:
+                  `What was that? ${window.localStorage.getItem(nickname)}!`;
 
     endText.innerHTML = `${scorePForEndText}`
 
