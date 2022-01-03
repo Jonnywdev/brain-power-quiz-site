@@ -1,8 +1,5 @@
-const generalKnowledgeQuiz = document.getElementById('general-knowlege')
-const sportQuiz = document.getElementById('sport')
-const filmAndTvQuiz = document.getElementById('film-tv')
-const historyQuiz = document.getElementById('history')
-const startButton = document.getElementById('start-btn')
+const startGeneralKnowledge = document.getElementById('start-gk-quiz')
+const startSport = document.getElementById('start-sport-quiz')
 const welcomeScreen = document.getElementById('welcome--card')
 const questionWrapper = document.getElementById('quiz-wrapper')
 const choices = Array.from(document.getElementsByClassName('choice'))
@@ -22,89 +19,84 @@ let availableQestions = []
 
 let generalKnowledgeQuestions = [
     {
-        question: 'Which African Country does Mafia Island belong to?',
-        choice1: 'Togo', 
-        choice2: 'Kenya',
-        choice3: 'Tanzania',
-        choice4: 'Sudan',
-        answer: 3
-    },
-    {
-        question: 'A hippophobe is afraid of which animals?',
-        choice1: 'Horses', 
-        choice2: 'Cows', 
-        choice3: 'Bats', 
-        choice4: 'hippopotamuses',
+        question: 'What is the diameter of a basketball hoop in inches?',
+        choice1: '18 Inches', 
+        choice2: '16 Inches',
+        choice3: '20 Inches',
+        choice4: '22 Inches',
         answer: 1
     },
     {
-        question: 'Who is Erik Weisz better known as?',
-        choice1: 'Eminem', 
-        choice2: 'Kit Harrington', 
-        choice3: 'Harry Houdini',
-        choice4: 'Drake',
-        answer: 3
+        question: 'What do you call it when a bowler makes three strikes in a row?',
+        choice1: '3 Of A Kind', 
+        choice2: 'Rabit', 
+        choice3: 'Eagle', 
+        choice4: 'Turkey',
+        answer: 4
     },
     {
-        question: 'What is the longest that an animal has ever lived? (That we know of)',
-        choice1: '17 years', 
-        choice2: '49 years', 
-        choice3: '86 years', 
-        choice4: '142 years',
-        answer: 3
-    },
-    {
-        question: 'How many rings are on the Olympic flag',
-        choice1: 'None',
-        choice2: '5', 
-        choice3: '7',
-        choice4: '4',
+        question: 'What is the national sport of Canada?',
+        choice1: 'Ice Hockey', 
+        choice2: 'Lacrosse', 
+        choice3: 'Soccer',
+        choice4: 'Tenis',
         answer: 2
     },
-
     {
-        question: 'What is a tarsier?',
-        choice1: 'A primate', 
-        choice2: 'A lizard', 
-        choice3: 'A bird', 
-        choice4: 'A fish',
-        answer: 1
-    },
-
-    {
-        question: 'How did Spider-man get his powers?',
-        choice1: 'Military experiment gone awry',
-        choice2: 'Born with them',
-        choice3: 'Woke up with them after a strange dream', 
-        choice4: 'Bitten by a radioactive spider',
-        answer: 4
-    },
-
-    {
-        question: 'In darts whats the most points you can score with a single throw?',
-        choice1: '60', 
-        choice2: '100', 
-        choice3: '50', 
-        choice4: '20',
-        answer: 1
-    },
-
-    {
-        question: 'Which of these animals does NOT appear in the Chinese zodiac?',
-        choice1: 'Rabbit', 
-        choice2: 'Dragon', 
-        choice3: 'Dog',
-        choice4: 'Bear',
-        answer: 4
-    },
-
-    {
-        question: 'In the nursery rhyme, how many blackbirds were baked in a pie?', 
-        choice1: "11",
-        choice2: '67',
-        choice3: '24',
-        choice4: '38',
+        question: 'How many dimples does an average golf ball have?',
+        choice1: '318', 
+        choice2: '372', 
+        choice3: '336', 
+        choice4: '361',
         answer: 3
+    },
+    {
+        question: 'What country has competed the most times in the Summer Olympics yet has not won a gold medal?',
+        choice1: 'The Philippines',
+        choice2: 'Georgia', 
+        choice3: 'Finland',
+        choice4: 'Canada',
+        answer: 1
+    },
+    {
+        question: 'In the 1971 Olympics, Nadia Comaneci was the first gymnast to score a perfect score. What country was she representing?',
+        choice1: 'Germany', 
+        choice2: 'Romania', 
+        choice3: 'Russia', 
+        choice4: 'China',
+        answer: 2
+    },
+    {
+        question: 'How many medals did China win at the Beijing Olympics?',
+        choice1: '100',
+        choice2: '90',
+        choice3: '85', 
+        choice4: '110',
+        answer: 1
+    },
+    {
+        question: 'What does NBA stand for?',
+        choice1: 'National Basketball Alliance', 
+        choice2: 'National Basketball Alikeness', 
+        choice3: 'National Basketball Association', 
+        choice4: 'National Basketball Antagonism',
+        answer: 3
+    },
+    {
+        question: 'What color are the goalposts in American football?',
+        choice1: 'White', 
+        choice2: 'Yellow', 
+        choice3: 'Grey',
+        choice4: 'Orange',
+        answer: 2
+    },
+    {
+        question: 'What sport is a lot like softball?', 
+        choice1: 'Dogeball',
+        choice2: 'Cricket',
+        choice3: 'Squash',
+        choice4: 'Baseball',
+        answer: 4
         
     }
 ]
@@ -112,38 +104,28 @@ let generalKnowledgeQuestions = [
 const SCORE_POINTS = 1
 const MAX_QUESTIONS = 10
 
-generalKnowledgeQuiz.addEventListener('click', chooseRightGame)
-sportQuiz.addEventListener('click', chooseRightGame)
-historyQuiz.addEventListener('click', chooseRightGame)
-filmAndTvQuiz.addEventListener('click', chooseRightGame)
-
-startButton.addEventListener('click', startGame)
-
-function chooseRightGame() {
-    if (generalKnowledgeQuiz.clicked) {
-        
-    }
-}
+startGeneralKnowledge.addEventListener('click', startGeneralKnowledgeQuiz)
+startSport.addEventListener('click', startSportQuiz)
 
 /**
  * Starts the game once
  * start game button has been clicked
  */
-function startGame() {
+function startGeneralKnowledgeQuiz() {
     console.log('started')
     welcomeScreen.classList.add('hide')
     questionWrapper.classList.remove('hide')
 }
 
-beginGame = () => {
+beginGkQuiz = () => {
     questionCounter = 0
     score = 0
-    availableQestions = [...questions]
+    availableQestions = [...generalKnowledgeQuestions]
     console.log('beginGame')
-    getNewQuestion()
+    getNewGkQuestion()
 }
 
-getNewQuestion = () => {
+getNewGkQuestion = () => {
     if(availableQestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
@@ -153,7 +135,6 @@ getNewQuestion = () => {
 
     questionCounter++ 
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQestions.length)
     currentQuestion = availableQestions[questionsIndex]
@@ -187,7 +168,75 @@ choices.forEach(choice => {
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            getNewGkQuestion()
+        }, 1000)
+
+    })
+})
+
+
+/**
+ * Starts the game once
+ * start game button has been clicked
+ */
+ function startSportQuiz() {
+    console.log('started')
+    welcomeScreen.classList.add('hide')
+    questionWrapper.classList.remove('hide')
+}
+
+beginSQuiz = () => {
+    questionCounter = 0
+    score = 0
+    availableQestions = [...generalKnowledgeQuestions]
+    console.log('beginGame')
+    getNewSQuestion()
+}
+
+getNewSQuestion = () => {
+    if(availableQestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+
+        questionWrapper.classList.add('hide')
+        endCard.classList.remove('hide')
+    }
+
+    questionCounter++ 
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+
+    const questionsIndex = Math.floor(Math.random() * availableQestions.length)
+    currentQuestion = availableQestions[questionsIndex]
+    question.innerText = currentQuestion.question
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
+}
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewSQuestion()
         }, 1000)
 
     })
@@ -202,13 +251,18 @@ incrementScore = num => {
     const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
 
     let scorePForEndText = (scorePercentage >= 80) ? "Wow you smashed it! Congratulations.":
-                  (scorePercentage >= 60) ? "Well done,you scored over 60%!":
+                  (scorePercentage >= 60) ? "Well done, you scored over 60%!":
                   (scorePercentage >= 40) ? "Ahh you could've done better!":
-                  (scorePercentage >= 20) ? "Is that the best yo can do? Atleast its not 0":
+                  (scorePercentage >= 20) ? "Is that the best you can do? Atleast its not 0":
                   "What was that?";
 
     endText.innerHTML = `${scorePForEndText}`
 
 }
 
+function refreshPage(){
+    window.location.reload();
+} 
+
 beginGame()
+
