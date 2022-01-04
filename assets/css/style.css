@@ -39,6 +39,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
 }
 
 
@@ -128,7 +129,7 @@ p {
     transition-delay: 0.1s;
 }
 
-.quiz-caption h3{
+.quiz-caption p{
     font-size: 30px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -182,7 +183,7 @@ p {
 
 #lm-img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .lm-is-wrapped {
@@ -595,6 +596,37 @@ form {
 }
 
 
+/* 404 page */
+.missing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 180px 10px;
+    text-align: center;
+}
+
+.missing-page-wrapper h1 {
+    margin-bottom: 5rem;
+}
+
+.back-btn {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Media Queries */
 
 @media (max-width: 1000px) {
@@ -827,18 +859,6 @@ form {
     .lm-text-wrapper {
         width: 100%;
         margin-right: 0;
-    }
-
-    #first-section {
-        top: 8rem;
-    }
-
-    #about-section {
-        top: 8rem;
-    }
-
-    #last-section {
-        top: 8rem;
     }
 }
 
