@@ -362,6 +362,20 @@ form {
     transition: all 0.3s ease;
 } 
 
+#accepted {
+    width: 25%;
+    margin: 0 5px;
+    height: 30px;
+    color: #000;
+    background: #00a30d;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} 
+
 .btn--blue {
     margin: 0 5px;
     height: 40px;

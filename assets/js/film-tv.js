@@ -10,6 +10,9 @@ const endCard = document.getElementById('end')
 const totalScore = document.getElementById('total-score')
 const endText = document.getElementById('end-sentence')
 const myForm = document.getElementById('nicknames-form')
+const submitChosenNickname = document.getElementById('submit')
+const chosenNicknameAccepted = document.getElementById('accepted')
+const nicknameInput = document.getElementById('input-for-nickname')
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -108,10 +111,22 @@ const MAX_QUESTIONS = 10
 startButton.addEventListener('click', startGame)
 
 myForm.addEventListener('submit', addNickname)
+
+nicknameInput.addEventListener('keyup', () => {
+    submitChosenNickname.disabled = !nicknameInput.value
+})
+
+submitChosenNickname.addEventListener('click', showAccepted)
+
+function showAccepted() {
+    submitChosenNickname.classList.add('hide')
+    chosenNicknameAccepted.classList.remove('hide')
+}
+
 /**
  * Adds the users nickname to local storage 
  */
- function addNickname(e) {
+function addNickname(e) {
     e.preventDefault()
 
     const userNicknameInput = document.getElementById('input-for-nickname').value
