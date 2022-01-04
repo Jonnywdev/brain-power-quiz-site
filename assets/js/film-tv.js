@@ -119,7 +119,13 @@ nicknameInput.addEventListener('keyup', () => {
     submitChosenNickname.disabled = !nicknameInput.value
 })
 
-submitChosenNickname.addEventListener('click', showAccepted)
+
+submitChosenNickname.addEventListener('click', showAccepted) 
+submitChosenNickname.addEventListener('click', () => {
+    startButton.disabled = !submitChosenNickname.click
+}) 
+    
+
 
 /**
  * Changes the Submit button
