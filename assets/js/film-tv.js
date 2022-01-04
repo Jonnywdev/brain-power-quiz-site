@@ -208,11 +208,11 @@ incrementScore = num => {
 
     const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
 
-    let scorePForEndText = (scorePercentage >= 80) ? `Wow ${window.localStorage.getItem(nickname)} you smashed it! Congratulations.`:
-                  (scorePercentage >= 60) ? `Well done, ${window.localStorage.getItem(nickname)} you scored over 60%!`:
-                  (scorePercentage >= 40) ? `Ahh you could've done better ${window.localStorage.getItem(nickname)}!`:
-                  (scorePercentage >= 20) ? `Is that the best you can do ${window.localStorage.getItem(nickname)}? Atleast its not 0`:
-                  `What was that? ${window.localStorage.getItem(nickname)}!`;
+    let scorePForEndText = (scorePercentage >= 80) ? `Wow ${JSON.parse(window.localStorage.getItem(nickname))} you smashed it! Congratulations.`:
+                  (scorePercentage >= 60) ? `Well done, ${JSON.parse(window.localStorage.getItem(nickname))} you scored over 60%!`:
+                  (scorePercentage >= 40) ? `Ahh you could've done better ${JSON.parse(window.localStorage.getItem(nickname))}!`:
+                  (scorePercentage >= 20) ? `Is that the best you can do ${JSON.parse(window.localStorage.getItem(nickname))}? Atleast its not 0`:
+                  `What was that? ${JSON.parse(window.localStorage.getItem(nickname))}!`;
 
     endText.innerHTML = `${scorePForEndText}`
 
