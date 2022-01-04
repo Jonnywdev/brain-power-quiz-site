@@ -110,6 +110,24 @@ const MAX_QUESTIONS = 10
 startButton.addEventListener('click', startGame)
 
 myForm.addEventListener('submit', addNickname)
+
+/**
+ * if a key is pressed then the submit button is disabled and you can click it
+ */
+ nicknameInput.addEventListener('keyup', () => {
+    submitChosenNickname.disabled = !nicknameInput.value
+})
+
+submitChosenNickname.addEventListener('click', showAccepted)
+
+/**
+ * Changes the Submit button
+ * to the Accepted button once clicked
+ */
+function showAccepted() {
+    submitChosenNickname.classList.add('hide')
+    chosenNicknameAccepted.classList.remove('hide')
+}
 /**
  * Adds the users nickname to local storage 
  */
@@ -196,11 +214,11 @@ incrementScore = num => {
 
     const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
 
-    let scorePForEndText = (scorePercentage >= 80) ? `Wow ${window.localStorage.getItem(nickname)} you smashed it! Congratulations.`:
-                  (scorePercentage >= 60) ? `Well done, ${window.localStorage.getItem(nickname)} you scored over 60%!`:
-                  (scorePercentage >= 40) ? `Ahh you could've done better ${window.localStorage.getItem(nickname)}!`:
-                  (scorePercentage >= 20) ? `Is that the best you can do ${window.localStorage.getItem(nickname)}? Atleast its not 0`:
-                  `What was that? ${window.localStorage.getItem(nickname)}!`;
+    let scorePForEndText = (scorePercentage >= 80) ? `Wow ${JSON.parse(window.localStorage.getItem(nickname))} you smashed it! Congratulations.`:
+                  (scorePercentage >= 60) ? `Well done, ${JSON.parse(window.localStorage.getItem(nickname))} you scored over 60%!`:
+                  (scorePercentage >= 40) ? `Ahh you could've done better ${JSON.parse(window.localStorage.getItem(nickname))}!`:
+                  (scorePercentage >= 20) ? `Is that the best you can do ${JSON.parse(window.localStorage.getItem(nickname))}? Atleast its not 0`:
+                  `What was that? ${JSON.parse(window.localStorage.getItem(nickname))}!`;
 
     endText.innerHTML = `${scorePForEndText}`
 

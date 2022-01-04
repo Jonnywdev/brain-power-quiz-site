@@ -112,12 +112,19 @@ startButton.addEventListener('click', startGame)
 
 myForm.addEventListener('submit', addNickname)
 
+/**
+ * if a key is pressed then the submit button is disabled and you can click it
+ */
 nicknameInput.addEventListener('keyup', () => {
     submitChosenNickname.disabled = !nicknameInput.value
 })
 
 submitChosenNickname.addEventListener('click', showAccepted)
 
+/**
+ * Changes the Submit button
+ * to the Accepted button once clicked
+ */
 function showAccepted() {
     submitChosenNickname.classList.add('hide')
     chosenNicknameAccepted.classList.remove('hide')
