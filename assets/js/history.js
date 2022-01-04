@@ -10,6 +10,9 @@ const endCard = document.getElementById('end')
 const totalScore = document.getElementById('total-score')
 const endText = document.getElementById('end-sentence')
 const myForm = document.getElementById('nicknames-form')
+const submitChosenNickname = document.getElementById('submit')
+const chosenNicknameAccepted = document.getElementById('accepted')
+const nicknameInput = document.getElementById('input-for-nickname')
 
 
 let currentQuestion = {}
@@ -119,6 +122,9 @@ myForm.addEventListener('submit', addNickname)
 })
 
 submitChosenNickname.addEventListener('click', showAccepted)
+submitChosenNickname.addEventListener('click', () => {
+    startButton.disabled = !submitChosenNickname.click
+}) 
 
 /**
  * Changes the Submit button
