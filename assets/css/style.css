@@ -34,56 +34,19 @@ p {
 }
 
 /* header */
-.header {
-    display: none;
-}
-
-#smaller-nav {
-    display: none;
-}
-
-#head-bg {
-    background-color: #000;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
+.welcome-img {
+    position: relative;
     top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#head-bg img {
-    height: auto;
-    width: 10%;
-    padding: 15px 30px 0 30px;
-    float: left;
-}
 
-/* navigation list */
-#menu {
-    font-size: 150%;
-    letter-spacing: 2px;
-    text-align: right;
-    margin-right: 40px;
-    line-height: 50px;
-}
-
-#menu ul {
-    margin-top: 4.5rem;
-}
-
-#menu li {
-    display: inline;
-    list-style-type: none;
-}
-
-#menu a  {
-    text-decoration: none;
-    color: #fff;
-}
 
 /* first section */
 #first-section {
     position: relative;
-    top: 12rem;
+    top: 4rem;
     padding-bottom: 5em;
     margin: 0 2rem;
 }
@@ -190,7 +153,7 @@ p {
 /* about us section */
 #about-section {
     position: relative;
-    top: 12rem;
+    top: 4rem;
     padding-bottom: 5em;
     margin: 0 2rem;
     overflow: hidden;
@@ -253,7 +216,7 @@ p {
 /* other quiz categories section */
 #last-section {
     position: relative;
-    top: 12rem;
+    top: 4rem;
     padding-bottom: 5em;
     margin: 0 2rem;
 }
@@ -634,10 +597,7 @@ form {
 /* Media Queries */
 
 @media (max-width: 1000px) {
-    /* header */
-    #head-bg img {
-        width: 13%;
-    }
+
     /* home page */
     p {
         font-size: 15px;
@@ -724,10 +684,7 @@ form {
 }
 
 @media (max-width: 900px) {
-    /* header */
-    #menu {
-        line-height: 25px;
-    }
+
     /* home screen */
     .lm-text-wrapper {
         width: 35%;
@@ -834,11 +791,6 @@ form {
 }
 
 @media (max-width: 600px) {
-    /* header */
-    #menu {
-        font-size: 100%;
-        line-height: 8px;
-    }
 
     /* homepage */
     .card-wrapper {
@@ -890,10 +842,6 @@ form {
 }
 
 @media (max-width: 500px) {
-    /* header */
-    #head-bg img {
-        width: 17%;
-    }
 
     /* homepage */
     #first-section {
@@ -953,10 +901,6 @@ form {
 }
 
 @media (max-width: 400px) {
-    /* header */
-    #head-bg img {
-        width: 20%;
-    }
 
     /* homepage */
     #first-section h1 {
@@ -988,11 +932,7 @@ form {
 }
 
 @media (max-width: 300px) {
-    /* header */
-    #menu {
-        font-size: 60%;
-        line-height: 0;
-    }
+
 
     .welcome-card {
         margin: 1.5em 1.5em 0 1.5em;
