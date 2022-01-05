@@ -103,27 +103,27 @@ The webiste consists of 2 pages, 1 is the home page. The other page is accesable
 
 # Technology
 ### HTML5
-* 
+* As a structure language.
 ### CSS
-* 
+* As a style language
 ### Javascript
-* 
+* As a scripting Language
 ### Font Awesome
-* 
+* As an icon library for social links.
 ### Google Fonts
-* 
+* As a font resource.
 ### GitHub
-* 
+* As a software hosting platform to keep the project in a remote location.
 ### Git
-* 
+* As a version-control system tracking.
 ### Gitpod
-* 
+* As a development hosting platform.
 ### Adobe XD
-* 
+* As a wireframing tool.
 ### Adobe Photoshop
-* 
+* As an image editor.
 ### Adobe Illustrator
-* 
+* As an illustration editor.
 
 # Testing
 ## Functionality Testing
