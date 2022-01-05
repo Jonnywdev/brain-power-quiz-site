@@ -172,9 +172,16 @@ After looking in the script I noticed that there was a spelling mistake.
 
 
 ## Preformance Testing
-- 
-![](assets/images/)
+I used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website. I had to make a few changes that I needed to make to improve the scores. Screenshots and supporting text is presented below:
+
+Initial screenshot
+![Lighthouse initial screenshot](assets/images/light-house-first-try.png)
 ## Code Validation
+At the end of the project I used 2 websites to validate the code.
+ * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS
+ * [Nu Html Checker](https://validator.w3.org/) to test HTML
+ All code passed with no errors or warnings.
+
 
 # Deployment
 The project was deployed on GitHub Pages. I used Gitpod as a development environment where I committed all changes to git version control system. I used push command in Gitpod to save changes into GitHub.
