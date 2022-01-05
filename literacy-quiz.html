@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Literacy Quiz</title>
+</head>
+<body>
+
+    <section id="welcome-section">
+        <!-- info box -->
+        <div class="welcome--card" id="welcome--card">
+            <div class="info-title">
+                <span>Rules of the Literacy quiz</span>
+            </div>
+            <div class="info-list">
+                <div class="info">1. There are 10 questions.</div>
+                <div class="info">2. You have to select an answer, before you are allowed to move on.</div>
+                <div class="info">3. You can not quit the quiz.</div>
+                <div class="info">4. You will get 1 point for each correct answer.</div>
+                <div class="info">5. You need to create a nickname before the quiz will begin.</div>
+            </div>
+
+            <div class="nicknames">
+                <div class="info" id="nick-text">Create a nickname</div>
+                <form id="nicknames-form">
+                    <input type="text" placeholder="Type here.." id="input-for-nickname">
+                    <button  id="submit" disabled>Submit</button>
+                    <button class="hide" id="accepted">Accepted</button>
+                </form>
+            </div>
+        
+
+            <div class="buttons">
+                <a href="index.html" class="quit">Quit Quiz</a>
+                <button data-type="start" class="btn--blue" id="start-btn" disabled>Get Started</button>
+            </div>
+        </div>
+
+        <div class="quiz-card hide" id="quiz-wrapper">
+            <div class="top-wrapper">
+                <p id="progressText" class="progress-text">
+                    Question
+                </p>
+                <div class="q-wrapper" id="question"> Question</div>
+            </div>
+        
+
+            <div class="answers" id="answer-buttons">
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="1">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="2">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="3">Choice</p>
+                </div>
+                <div class="answer--btn">
+                    <p class="answer--p choice" data-number="4">Choice</p>
+                </div>
+            </div>
+            <div class="bottom-wrapped">
+                <div class="score-wrapper">
+                    <p>
+                        Score:
+                    </p>
+                    <h1 id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-card hide" id="end">
+            <div class="top-text">
+                <h1 id="end-sentence">Wow that was bad, you may want to hit restart. we won't tell anyone ;)</h1>
+                <h1 id="total-score">You scored 0 out of 10</h1>
+            
+                <div class="buttons-wrapper">
+                    <button data-type="start" class="btn--blue" id="restart-btn" onClick="refreshPage()">Restart</button>
+                    <a href="index.html" class="quit">Home</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="assets/js/literacy.js"></script>
+</body>
+</html>
