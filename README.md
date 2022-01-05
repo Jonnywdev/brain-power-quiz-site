@@ -127,41 +127,53 @@ The webiste consists of 2 pages, 1 is the home page. The other page is accesable
 
 # Testing
 ## Functionality Testing
+I used Mozilla web developer tools and Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
 
 ## Compatibility Testing
+The website was tested across multiple virtual mobile devices and browsers. I checked all supported devices in both web developer tools.
+
+I tested on hardware devices such as: Apple Ipad 12 pro, Samsung S20 Ultra smart phone with Android 10 and used a Iphone 5 to compare the difference in size.
 
 ## User Stories Testing
 ### As the Website Owner
-- 
-    >   
-- 
-    >   
-- 
-    >   
+- To provide a fun selection of quiz's for anyone to play.
+    >   The website has 12 quiz cards which are all working quiz's, which gives the user a large choice.
+-  Have a great SEO website to help new people to find the website.
+    >   With great SEO we will be at the top of most search engines which will help us get more support and clients.  
 
 ### As a New Player
-- 
-    >   
-- 
-    >   
-- 
-    >   
+- User is able to easily navigate through the site.
+    >   User is able to find the navigation very easily on any screen size.
+- User is able to find information out easily.
+    >  User can find any information out very easily by scrolling to the about us section, which is on the home page. 
+
 
 ### As an Exsisting Player
-- 
-    >   
-- 
-    >   
-- 
-    >  
+- User is able to easily find the quiz's they want to play.
+    >   User can find the quiz category they like playing easily. 
+- User is able to try any quiz.
+    >   There is not a limit on how many quiz's you can play.
+- User can learn more about the company.
+    >  User is able to find any information out easily, they can also access our other game from the home page.
 
 ___
 ## Issues Found During Site Development
-- 
+- Images do not align properly. 
+![Images not aligning](assets/images/height-not-working.png)
+The images for the quiz do not line up, because the image heights are different. All images have the same class which give them height of 100%.
+![Images are now aligning](assets/images/height-working.png)
+I decided to make all images the same height manually using photoshop, I did this once I had made all images into webp file types.
+
+- Quiz question and answers don't load.
+![Quiz card is blank](assets/images/quiz-not-working.png)
+The Quiz card is blank, nothing is loading up.
+![Quiz card is now working](assets/images/quiz-working.png)
+After looking in the script I noticed that there was a spelling mistake.
+
 
 ## Preformance Testing
 - 
-
+![](assets/images/)
 ## Code Validation
 
 # Deployment

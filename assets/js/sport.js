@@ -232,7 +232,6 @@ incrementScore = num => {
                 `What was that? ${JSON.parse(window.localStorage.getItem(nickname))}!`;
 
     endText.innerHTML = `${scorePForEndText}`
-
 }
 
 function refreshPage(){
