@@ -1,4 +1,4 @@
-![Brian power logo](assets/images/logo-white-rm-new.png)
+![Brain power logo](assets/images/logo-white-rm-new.png)
 # Brain Power
 
 ## Introduction
@@ -34,10 +34,13 @@ The website is designed to give the user a great experience, with an easy to use
 ### Wirefarmes
 I decided to draw out my initial wireframes.
 #### Wireframes for Bigger Screens
+![Mobile/small screens wireframe](assets/images/mobile-wireframe.jpeg)
 
 #### Wireframes for Mobile Screens
+![Bigger screens wireframe](assets/images/web-wireframe.jpeg)
 
 ##### Coloured in Wireframes
+![Bigger screens wireframe](assets/images/wireframe-color.png)
 
 ### Site Styles
 
@@ -58,16 +61,9 @@ I decided to draw out my initial wireframes.
 * For my images I used [Unsplash.com](https://unsplash.com) and they are credited in [credits](#credits) section.
 
 ## Features of the Website: 
-The webiste consists of 3 pages, 2 are accessible from a navigation menu. The other page is accesable through the Homepage button (when a quiz is selected).
+The webiste consists of 2 pages, 1 is the home page. The other page is accesable through the Homepage button (when a quiz is selected).
 
-## Navigation Bar:
-* The navigation bar is only visible on the homepage, it is responsive to screen size and will adapt when the size changes.
 
-#### Navigation Scheme:
-- On the left side there will be the logo, which also can be used as a navigation link to the index page.
-- On the right side there are 2 links, which are:
-    - Home
-    - Account
 
 #### Home Page
 * ##### Top Rated Quizes
@@ -86,23 +82,24 @@ The webiste consists of 3 pages, 2 are accessible from a navigation menu. The ot
 
 #### Quiz Pages
 * ##### Welcome Page
-- 
-- 
-- 
+- This section is made of a card which holds 4 blocks.
+- The top block holds a title section which introduces you to your chosen quiz.
+- The second block holds 5 rules.
+- The third block allows you to create a nickname.
+- And the final includes 2 buttons, one that lets you exit the quiz and one that starts the game.
 
 * ##### Question Page
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- This section is made of a card which holds 4 blocks.
+- The first block lets you know which question you are on.
+- The second Shows you the question.
+- The 3rd has 4 buttons for the answers you can choose from.
+- The final block includes the score. 
 
-* ##### Score Overlay 
-- 
-- 
-- 
+* ##### Final Page 
+- This section is made of a card which holds 3 blocks.
+- The first includes a comment depending on how well you did on the quiz and also includes the nickname the user creates on the welcome page.
+- The second tells you what you scored out've 10.
+- And the final includes 2 buttons, one that lets you restart the quiz and one that takes you to the home page.
 
 # Technology
 ### HTML5
