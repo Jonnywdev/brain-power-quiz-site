@@ -228,3 +228,12 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 * [gen-know.png](https://www.healthline.com/health-news/heres-what-happens-when-you-remove-half-your-brain)
 
 # Screenshots
+## Project Screenshots
+[Screenshot 1, Loading Screen](assets/images/screenshot1.png)
+[Screenshot 2, Love Maths Section](assets/images/screenshot2.png)
+[Screenshot 3, Other Quiz Categories](assets/images/screenshot3.png)
+[Screenshot 4, Welcome to the quiz page](assets/images/screenshot4.png)
+[Screenshot 5, Nickname has been Accepted](assets/images/screenshot5.png)
+[Screenshot 6, Questions](assets/images/screenshot6.png)
+[Screenshot 7, Question Right!](assets/images/screenshot7.png)
+[Screenshot 8, End of game card](assets/images/screenshot8.png)
