@@ -3,6 +3,10 @@
 
 ## Introduction
 
+This website presents Brain Power, which is a website that provides people with 12 different fun quiz's that they can play and test their knowledge. The design is simple and easy to use.
+
+The main aim of this project was to produce a fun quiz website, which is responsiveand easy to use by only using HTML, CSS and JAVASCRIPT.
+
 ## Table of contents
 * [User goals](#user-goals)
 * [Features](#Features)
