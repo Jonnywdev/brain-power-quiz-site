@@ -19,7 +19,10 @@ let acceptingAnswers = true
 let score = 0
 let questionCounter = 0
 let availableQestions = []
-
+/**
+ * All questions
+ * Choices and Answers
+ */
 let questions = [
     {
         question: 'What is the diameter of a basketball hoop in inches?',
@@ -120,10 +123,15 @@ myForm.addEventListener('submit', addNickname)
     submitChosenNickname.disabled = !nicknameInput.value
 })
 
-submitChosenNickname.addEventListener('click', showAccepted)
+/**
+ * if a key is pressed then the get started button is disabled and you can click it to start the game
+ */
+submitChosenNickname.addEventListener('click', showAccepted) 
 submitChosenNickname.addEventListener('click', () => {
     startButton.disabled = !submitChosenNickname.click
 }) 
+    
+
 
 /**
  * Changes the Submit button
@@ -137,7 +145,7 @@ function showAccepted() {
 /**
  * Adds the users nickname to local storage 
  */
- function addNickname(e) {
+function addNickname(e) {
     e.preventDefault()
 
     const userNicknameInput = document.getElementById('input-for-nickname').value
@@ -154,6 +162,10 @@ function startGame() {
     questionWrapper.classList.remove('hide')
 }
 
+/**
+ * Begins the game, sets the question counter and score to 0 and 
+ * calls the getNewQuestion function which starts the quiz
+ */
 beginGame = () => {
     questionCounter = 0
     score = 0
@@ -161,34 +173,58 @@ beginGame = () => {
     console.log('beginGame')
     getNewQuestion()
 }
-
+/**
+ * Gets new question and sets it
+ */
 getNewQuestion = () => {
+    /**
+    * If the length of availableQestions is strictly equal to 0 
+    * or if the amount of questions is greater than the max amount of questions then,
+    * end the quiz. Save the score in local storage.
+    */
     if(availableQestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
         questionWrapper.classList.add('hide')
         endCard.classList.remove('hide')
     }
-
+    /**
+    * If not then add 1 to the question counter 
+    */
     questionCounter++ 
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-
+    /**
+    * Randomises the questions (So they dont come up in the same order everytime)
+    * And adds the question to the question input in html 
+    */
     const questionsIndex = Math.floor(Math.random() * availableQestions.length)
     currentQuestion = availableQestions[questionsIndex]
     question.innerText = currentQuestion.question
-
+    /**
+    * Reads the choices and inserts them in the answers input in html 
+    */
     choices.forEach(choice => {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
     })
-
+    /**
+    * Removes any questions that have been used
+    */
     availableQestions.splice(questionsIndex, 1)
 
     acceptingAnswers = true
 }
-
+/**
+ * Selecting answers
+ */
 choices.forEach(choice => {
+    /**
+    * listens for an answer to be clicked
+    */
     choice.addEventListener('click', e => {
+        /**
+        * If the quiz is not accepting answers
+        */
         if(!acceptingAnswers) return
 
         acceptingAnswers = false
@@ -196,13 +232,17 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset['number']
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-
+        /**
+        * If answer is right then add one to the score
+        */
         if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
-
+        /**
+        *Removes 'correct' or 'incorrect' class  
+        */
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
@@ -211,14 +251,27 @@ choices.forEach(choice => {
     })
 })
 
+/**
+ * Adds to the score
+ */
 incrementScore = num => {
     score +=num
+    /**
+    * Adds the score to the html input
+    */
     scoreText.innerText = score
-
+    /**
+    * Adds the sentence to the total score area
+    */
     totalScore.innerText = `You scored ${score} out of ${MAX_QUESTIONS}`
-
+    /**
+    * Works out the percentage out've the amount of questions 
+    */
     const scorePercentage = Math.round(100 * score/MAX_QUESTIONS)
-
+    /**
+     * End sentence that is different, depending on how many correct answers you get. 
+     * It also gets your nickname back as an object from the local storage.
+     */
     let scorePForEndText = (scorePercentage >= 100) ? `Top marks? That was incredible ${JSON.parse(window.localStorage.getItem(nickname))}!`:
                   (scorePercentage >= 90) ? `Wow ${JSON.parse(window.localStorage.getItem(nickname))} you smashed it! Congratulations.`:
                   (scorePercentage >= 80) ? `Oh no, ${JSON.parse(window.localStorage.getItem(nickname))} that was so closed!`:
@@ -232,11 +285,14 @@ incrementScore = num => {
                 `What was that? ${JSON.parse(window.localStorage.getItem(nickname))}!`;
 
     endText.innerHTML = `${scorePForEndText}`
+
 }
 
+/**
+ * Refreshes the page when restart button is clicked
+ */
 function refreshPage(){
     window.location.reload();
 } 
 
 beginGame()
-
