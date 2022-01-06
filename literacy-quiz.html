@@ -12,12 +12,15 @@
 </head>
 <body>
 
+    <!-- Full quiz section -->
     <section id="welcome-section">
-        <!-- info box -->
+        <!-- Welcome section - includes title of quiz, rules, a way to create a nickname and a way to exit & start the quiz -->
         <div class="welcome--card" id="welcome--card">
             <div class="info-title">
+                <!-- Title of the quiz -->
                 <span>Rules of the Literacy quiz</span>
             </div>
+            <!-- Rules of the quiz -->
             <div class="info-list">
                 <div class="info">1. There are 10 questions.</div>
                 <div class="info">2. You have to select an answer, before you are allowed to move on.</div>
@@ -25,7 +28,7 @@
                 <div class="info">4. You will get 1 point for each correct answer.</div>
                 <div class="info">5. You need to create a nickname before the quiz will begin.</div>
             </div>
-
+            <!-- Way to add and submit nickname -->
             <div class="nicknames">
                 <div class="info" id="nick-text">Create a nickname</div>
                 <form id="nicknames-form">
@@ -35,22 +38,24 @@
                 </form>
             </div>
         
-
+            <!-- Buttons to start and exit the quiz -->
             <div class="buttons">
                 <a href="index.html" class="quit">Quit Quiz</a>
                 <button data-type="start" class="btn--blue" id="start-btn" disabled>Get Started</button>
             </div>
         </div>
-
+        <!-- Quiz section - includes question counter, the Question, the answer buttons and the score tracker -->
         <div class="quiz-card hide" id="quiz-wrapper">
             <div class="top-wrapper">
+                <!-- Question counter -->
                 <p id="progressText" class="progress-text">
                     Question
                 </p>
+                <!-- The question gets inputed here -->
                 <div class="q-wrapper" id="question"> Question</div>
             </div>
         
-
+            <!-- The answer choices get inputed here -->
             <div class="answers" id="answer-buttons">
                 <div class="answer--btn">
                     <p class="answer--p choice" data-number="1">Choice</p>
@@ -66,6 +71,7 @@
                 </div>
             </div>
             <div class="bottom-wrapped">
+                <!-- This is the score tracker -->
                 <div class="score-wrapper">
                     <p>
                         Score:
@@ -76,12 +82,14 @@
                 </div>
             </div>
         </div>
-
+        <!-- Final Section - includes a sentence (different) depending on how well you do in the quiz, a total score area and 2 buttons, one to go home and one to restart the quiz -->
         <div class="end-card hide" id="end">
             <div class="top-text">
+                <!-- Fun sentence, Also includes your nickname (as long as you score atleast 1/10) -->
                 <h1 id="end-sentence">Wow that was bad, you may want to hit restart. we won't tell anyone ;)</h1>
+                <!-- Total score area telling you how many correct answers you got out of 10 -->
                 <h1 id="total-score">You scored 0 out of 10</h1>
-            
+                <!-- Buttons to restart the quiz or go back to the home page -->
                 <div class="buttons-wrapper">
                     <button data-type="start" class="btn--blue" id="restart-btn" onClick="refreshPage()">Restart</button>
                     <a href="index.html" class="quit">Home</a>
