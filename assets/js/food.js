@@ -82,9 +82,9 @@ let questions = [
     },
     {
         question: 'What vegetable has varieties known as Bell Tower, Orobelle, and Jupiter?',
-        choice1: 'Onion', 
+        choice1: 'Eggplant', 
         choice2: 'Pepper', 
-        choice3: 'Rum', 
+        choice3: 'Broccoli', 
         choice4: 'Swede',
         answer: 2
     },
