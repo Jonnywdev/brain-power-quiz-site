@@ -884,6 +884,10 @@ form {
         padding-bottom: 2.5em;
     }
 
+    .quiz-caption p {
+        font-size: 20px;
+    }
+
     /* quiz page - welcome section */
     .info-title {
         font-size: 17px;
@@ -943,6 +947,10 @@ form {
     }
     #last-section h3 {
         font-size: 1.5em;
+    }
+
+    .quiz-caption p {
+        font-size: 30px;
     }
 
     hr {
