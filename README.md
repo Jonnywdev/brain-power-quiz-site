@@ -85,21 +85,21 @@ The webiste consists of 2 pages, 1 is the home page. The other page is accesable
 - These cards an non clickable.
 
 #### Quiz Pages
-* ##### Welcome Page
+##### Welcome Page
 - This section is made of a card which holds 4 blocks.
 - The top block holds a title section which introduces you to your chosen quiz.
 - The second block holds 5 rules.
 - The third block allows you to create a nickname.
 - And the final includes 2 buttons, one that lets you exit the quiz and one that starts the game.
 
-* ##### Question Page
+##### Question Page
 - This section is made of a card which holds 4 blocks.
 - The first block lets you know which question you are on.
 - The second Shows you the question.
 - The 3rd has 4 buttons for the answers you can choose from.
 - The final block includes the score. 
 
-* ##### Final Page 
+##### Score Page 
 - This section is made of a card which holds 3 blocks.
 - The first includes a comment depending on how well you did on the quiz and also includes the nickname the user creates on the welcome page.
 - The second tells you what you scored out've 10.
@@ -164,14 +164,21 @@ ___
 ## Issues Found During Site Development
 - Images do not align properly. 
 ![Images not aligning](assets/images/height-not-working.png)
+
 The images for the quiz do not line up, because the image heights are different. All images have the same class which give them height of 100%.
+
 ![Images are now aligning](assets/images/height-working.png)
+
 I decided to make all images the same height manually using photoshop, I did this once I had made all images into webp file types.
 
 - Quiz question and answers don't load.
+
 ![Quiz card is blank](assets/images/quiz-not-working.png)
+
 The Quiz card is blank, nothing is loading up.
+
 ![Quiz card is now working](assets/images/quiz-working.png)
+
 After looking in the script I noticed that there was a spelling mistake.
 
 
@@ -180,6 +187,11 @@ I used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to
 
 Initial screenshot
 ![Lighthouse initial screenshot](assets/images/light-house-first-try.png)
+
+
+![Lighthouse updated screenshot](assets/images/lighthouse-updated.png)
+I ended up changing the images from webp to jpg and correctly sizing them which helped boost the preformance. I also added keywords which helped with the SEO.
+
 ## Code Validation
 At the end of the project I used 2 websites to validate the code.
  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS
@@ -211,7 +223,7 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 * To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ## Code:
-* Hover effect on Quiz cards:[30secondsofcode.org](https://www.30secondsofcode.org/css/s/image-overlay-hover )
+* Hover effect on Quiz cards: [30secondsofcode.org](https://www.30secondsofcode.org/css/s/image-overlay-hover )
 
 ## Images
 
@@ -222,7 +234,7 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 * [animal.png](https://unsplash.com/photos/UbjGsvEwnzc)
 * [geography.png](https://unsplash.com/photos/WOF7xn1antA)
 * [literature.png](https://unsplash.com/photos/sfL_QOnmy00)
-* [food.png](https://unsplash.com/photos/6XmQV6GccYU()
+* [food.png](https://unsplash.com/photos/6XmQV6GccYU)
 * [science.png](https://unsplash.com/photos/3FtypNvSPn0)
 * [cartoon.png](https://unsplash.com/photos/mou0S7ViElQ)
 * [music.png](https://unsplash.com/photos/lDKmtwvrZZs)
@@ -233,11 +245,11 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 
 # Screenshots
 ## Project Screenshots
-[Screenshot 1, Loading Screen](assets/images/screenshot1.png)
-[Screenshot 2, Love Maths Section](assets/images/screenshot2.png)
-[Screenshot 3, Other Quiz Categories](assets/images/screenshot3.png)
-[Screenshot 4, Welcome to the quiz page](assets/images/screenshot4.png)
-[Screenshot 5, Nickname has been Accepted](assets/images/screenshot5.png)
-[Screenshot 6, Questions](assets/images/screenshot6.png)
-[Screenshot 7, Question Right!](assets/images/screenshot7.png)
-[Screenshot 8, End of game card](assets/images/screenshot8.png)
+![Screenshot 1, Loading Screen](assets/images/screenshot1.png)
+![Screenshot 2, Love Maths Section](assets/images/screenshot2.png)
+![Screenshot 3, Other Quiz Categories](assets/images/screenshot3.png)
+![Screenshot 4, Welcome to the quiz page](assets/images/screenshot4.png)
+![Screenshot 5, Nickname has been Accepted](assets/images/screenshot5.png)
+![Screenshot 6, Questions](assets/images/screenshot6.png)
+![Screenshot 7, Question Right!](assets/images/screenshot7.png)
+![Screenshot 8, End of game card](assets/images/screenshot8.png)
