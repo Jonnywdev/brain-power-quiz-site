@@ -64,6 +64,8 @@ I decided to draw out my initial wireframes.
 
 * For my images I used [Unsplash.com](https://unsplash.com) and they are credited in [credits](#credits) section.
 
+[Back to Table of contents](#table-of-contents)
+
 ## Features of the Website: 
 The webiste consists of 2 pages, 1 is the home page. The other page is accesable through the Homepage button (when a quiz is selected).
 
@@ -105,6 +107,8 @@ The webiste consists of 2 pages, 1 is the home page. The other page is accesable
 - The second tells you what you scored out've 10.
 - And the final includes 2 buttons, one that lets you restart the quiz and one that takes you to the home page.
 
+[Back to Table of contents](#table-of-contents)
+
 # Technology
 ### HTML5
 * As a structure language.
@@ -128,6 +132,8 @@ The webiste consists of 2 pages, 1 is the home page. The other page is accesable
 * As an image editor.
 ### Adobe Illustrator
 * As an illustration editor.
+
+[Back to Table of contents](#table-of-contents)
 
 # Testing
 ## Functionality Testing
@@ -186,10 +192,12 @@ After looking in the script I noticed that there was a spelling mistake.
 I used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website. I had to make a few changes that I needed to make to improve the scores. Screenshots and supporting text is presented below:
 
 Initial screenshot
+
 ![Lighthouse initial screenshot](assets/images/light-house-first-try.png)
 
 
 ![Lighthouse updated screenshot](assets/images/lighthouse-updated.png)
+
 I ended up changing the images from webp to jpg and correctly sizing them which helped boost the preformance. I also added keywords which helped with the SEO.
 
 ## Code Validation
@@ -198,6 +206,7 @@ At the end of the project I used 2 websites to validate the code.
  * [Nu Html Checker](https://validator.w3.org/) to test HTML
  All code passed with no errors or warnings.
 
+[Back to Table of contents](#table-of-contents)
 
 # Deployment
 The project was deployed on GitHub Pages. I used Gitpod as a development environment where I committed all changes to git version control system. I used push command in Gitpod to save changes into GitHub.
@@ -218,6 +227,8 @@ To run locally:
 Alternatively you can [Clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-power-quiz-site) into your github account.
+
+[Back to Table of contents](#table-of-contents)
 
 # Credits
 * To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
@@ -243,6 +254,8 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 ### Healthline.con
 * [gen-know.png](https://www.healthline.com/health-news/heres-what-happens-when-you-remove-half-your-brain)
 
+[Back to Table of contents](#table-of-contents)
+
 # Screenshots
 ## Project Screenshots
 ![Screenshot 1, Loading Screen](assets/images/screenshot1.png)
@@ -253,3 +266,6 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 ![Screenshot 6, Questions](assets/images/screenshot6.png)
 ![Screenshot 7, Question Right!](assets/images/screenshot7.png)
 ![Screenshot 8, End of game card](assets/images/screenshot8.png)
+
+
+[Back to Table of contents](#table-of-contents)
