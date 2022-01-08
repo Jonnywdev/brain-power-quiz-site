@@ -159,7 +159,6 @@ function addNickname(e) {
  * start game button has been clicked
  */
 function startGame() {
-    console.log('started')
     welcomeScreen.classList.add('hide')
     questionWrapper.classList.remove('hide')
 }
@@ -172,7 +171,6 @@ beginGame = () => {
     questionCounter = 0
     score = 0
     availableQestions = [...questions]
-    console.log('beginGame')
     getNewQuestion()
 }
 /**
