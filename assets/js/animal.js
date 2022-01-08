@@ -108,6 +108,8 @@ let questions = [
 
 let nickname = []
 
+
+
 const SCORE_POINTS = 1
 const MAX_QUESTIONS = 10
 
@@ -128,6 +130,9 @@ nicknameInput.addEventListener('keyup', () => {
 submitChosenNickname.addEventListener('click', showAccepted) 
 submitChosenNickname.addEventListener('click', () => {
     startButton.disabled = !submitChosenNickname.click
+
+    alert(`You need to submit your nickname before you can continue`);
+    throw`You need to submit your nickname before you can continue. Aborting!`;
 }) 
     
 

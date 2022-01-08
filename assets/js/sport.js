@@ -129,6 +129,9 @@ myForm.addEventListener('submit', addNickname)
 submitChosenNickname.addEventListener('click', showAccepted) 
 submitChosenNickname.addEventListener('click', () => {
     startButton.disabled = !submitChosenNickname.click
+
+    alert(`You need to submit your nickname before you can continue`);
+    throw`You need to submit your nickname before you can continue. Aborting!`;
 }) 
     
 
