@@ -5,7 +5,7 @@
 
 This website presents Brain Power, which is a website that provides people with 12 different fun quiz's that they can play and test their knowledge. The design is simple and easy to use.
 
-The main aim of this project was to produce a fun quiz website, which is responsiveand easy to use by only using HTML, CSS and JAVASCRIPT.
+The main aim of this project was to produce a fun quiz website, which is responsive and easy to use by only using HTML, CSS and JAVASCRIPT.
 
 ## Table of contents
 * [User goals](#user-goals)
@@ -23,36 +23,36 @@ The main aim of this project was to produce a fun quiz website, which is respons
 - User is able to easily see their result from the quiz.
 ## Returning User Goals
 - User is able to easily find a quiz they want to play.
-- User is able to set their username.
+- User is able to set their user name.
 - User is able to play a different game, Love Maths.
 ## Website Owner Business Goals
 - To have a fun selection of quiz's for users to play, with a random selection of questions for each round.
 - To give users easy understandable rules for each quiz.
 - To give users an understanding of how they did.
-- To give users the opportunity to try out a differnt game, they have made.
+- To give users the opportunity to try out a different game, they have made.
 
 # Features
 ## Clean Structure
 The website is designed to give the user a great experience, with an easy to use design and to be user-friendly on all types of devices. There will be no difference in the experience users have when on a mobile compared to a laptop!
 
-### Wirefarmes
-I decided to draw out my initial wireframes.
-#### Wireframes for Bigger Screens
-![Mobile/small screens wireframe](assets/images/mobile-wireframe.jpeg)
+### Wire frames
+I decided to draw out my initial wire frames.
+#### Wire frames for Bigger Screens
+![Mobile/small screens wire frame](assets/images/mobile-wireframe.jpeg)
 
-#### Wireframes for Mobile Screens
-![Bigger screens wireframe](assets/images/web-wireframe.jpeg)
+#### Wire frames for Mobile Screens
+![Bigger screens wire frame](assets/images/web-wireframe.jpeg)
 
-##### Coloured in Wireframes
-![Bigger screens wireframe](assets/images/wireframe-color.png)
+##### Coloured in Wire frames
+![Bigger screens wire frame](assets/images/wireframe-color.png)
 
 ### Site Styles
 
 #### Colours
 * Background colour - #ff9d00 
-* Secondry colour - #000000
+* Secondary colour - #000000
 * Text colour  - #000000
-* Secondry text colour  - #ffffff
+* Secondary text colour  - #ffffff
 * Correct answer colour  - #00a30d
 * Incorrect answer colour  - #c60606
 
@@ -67,24 +67,24 @@ I decided to draw out my initial wireframes.
 [Back to Table of contents](#table-of-contents)
 
 ## Features of the Website: 
-The webiste consists of 2 pages, 1 is the home page. The other page is accesable through the Homepage button (when a quiz is selected).
+The website consists of 2 pages, 1 is the home page. The other page is accessible through the Homepage button (when a quiz is selected).
 
 
 
 #### Home Page
-* ##### Top Rated Quizes
+* ##### Top Rated Quizzes
 - This section holds 4 cards, each card has an image relating to the quiz.
 - Each card has a hover effect which brings up the title of each quiz category.
 - Each card in this section is pressable and will link to its relative quiz.
 
 * ##### About Us 
-- This section has a short paragraph to give our users an understanding about who we are (The creaters).
+- This section has a short paragraph to give our users an understanding about who we are (The creators).
 -  It also shares our other game, love maths. It includes an image, which is a screenshot of the game. It also has a button that takes you to the game on a new tab.
 
 * ##### Other Quiz Categories
 - This section holds 8 cards, each card has an image relating to the quiz.
 - Each card has a hover effect which brings up the title of each quiz category.
-- These cards an non clickable.
+- These cards an non click able.
 
 #### Quiz Pages
 ##### Welcome Page
@@ -158,7 +158,7 @@ I tested on hardware devices such as: Apple Ipad 12 pro, Samsung S20 Ultra smart
     >  User can find any information out very easily by scrolling to the about us section, which is on the home page. 
 
 
-### As an Exsisting Player
+### As an Existing Player
 - User is able to easily find the quiz's they want to play.
     >   User can find the quiz category they like playing easily. 
 - User is able to try any quiz.
@@ -175,7 +175,7 @@ The images for the quiz do not line up, because the image heights are different.
 
 ![Images are now aligning](assets/images/height-working.png)
 
-I decided to make all images the same height manually using photoshop, I did this once I had made all images into webp file types.
+I decided to make all images the same height manually using Photoshop, I did this once I had made all images into webp file types.
 
 - Quiz question and answers don't load.
 
@@ -188,7 +188,7 @@ The Quiz card is blank, nothing is loading up.
 After looking in the script I noticed that there was a spelling mistake.
 
 
-## Preformance Testing
+## Performance Testing
 I used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website. I had to make a few changes that I needed to make to improve the scores. Screenshots and supporting text is presented below:
 
 Initial screenshot
@@ -198,7 +198,7 @@ Initial screenshot
 
 ![Lighthouse updated screenshot](assets/images/lighthouse-updated.png)
 
-I ended up changing the images from webp to jpg and correctly sizing them which helped boost the preformance. I also added keywords which helped with the SEO.
+I ended up changing the images from webp to jpg and correctly sizing them which helped boost the performance. I also added keywords which helped with the SEO.
 
 ## Code Validation
 At the end of the project I used 2 websites to validate the code.
@@ -253,6 +253,9 @@ this repository ([brain-power-quiz-site](https://github.com/Jonnywdev/brain-powe
 
 ### Healthline.con
 * [gen-know.png](https://www.healthline.com/health-news/heres-what-happens-when-you-remove-half-your-brain)
+
+### Love Maths
+* [Love maths game](https://jonnywdev.github.io/love-maths/)
 
 [Back to Table of contents](#table-of-contents)
 
